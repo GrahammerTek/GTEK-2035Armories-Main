@@ -55,9 +55,6 @@
       <texPath>Things/Ammo/Rifle/FMJ</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.07</MarketValue>
-    </statBases>
     <ammoClass>FullMetalJacket</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_FMJ</cookOffProjectile>
   </ThingDef>
@@ -68,9 +65,6 @@
       <texPath>Things/Ammo/Rifle/AP</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.07</MarketValue>
-    </statBases>
     <ammoClass>ArmorPiercing</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_AP</cookOffProjectile>
   </ThingDef>
@@ -81,9 +75,6 @@
       <texPath>Things/Ammo/Rifle/HP</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.07</MarketValue>
-    </statBases>
     <ammoClass>HollowPoint</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_HP</cookOffProjectile>
   </ThingDef>
@@ -94,9 +85,6 @@
       <texPath>Things/Ammo/Rifle/Incendiary</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.09</MarketValue>
-    </statBases>
     <ammoClass>IncendiaryAP</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_Incendiary</cookOffProjectile>
   </ThingDef>
@@ -107,9 +95,6 @@
       <texPath>Things/Ammo/Rifle/HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.17</MarketValue>
-    </statBases>
     <ammoClass>ExplosiveAP</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_HE</cookOffProjectile>
   </ThingDef>
@@ -121,14 +106,12 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.09</MarketValue>
       <Mass>0.012</Mass>
     </statBases>
     <ammoClass>Sabot</ammoClass>
     <cookOffProjectile>Bullet_65x39mmCaseless_Sabot</cookOffProjectile>
   </ThingDef>
   <!-- ================== Projectiles ================== -->
-  <!--20 Inch-->
   <ThingDef Name="Base65x39mmCaselessBullet" ParentName="BaseBulletCE" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -139,6 +122,7 @@
       <speed>149</speed>
     </projectile>
   </ThingDef>
+  <!--20 Inch-->
   <ThingDef ParentName="Base65x39mmCaselessBullet">
     <defName>Bullet_65x39mmCaseless_FMJ</defName>
     <label>6.5x39mm Caseless bullet (FMJ)</label>

@@ -710,4 +710,22 @@
       </li>
     </subSounds>
   </SoundDef>
+  <!--=ATTACHMENT SPECIFIC=-->
+  <!--Suppressed 762-->
+  <SoundDef>
+    <defName>HID_Shot_A3762Suppressed</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Shot/GTEK_A3762Suppressed</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>

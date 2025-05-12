@@ -41,9 +41,6 @@
       <texPath>Things/Ammo/HighCaliber/FMJ</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.18</MarketValue>
-    </statBases>
     <ammoClass>FullMetalJacket</ammoClass>
     <cookOffProjectile>Bullet_93x64mmBrenneke_FMJ</cookOffProjectile>
   </ThingDef>
@@ -54,9 +51,6 @@
       <texPath>Things/Ammo/HighCaliber/AP</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.18</MarketValue>
-    </statBases>
     <ammoClass>ArmorPiercing</ammoClass>
     <cookOffProjectile>Bullet_93x64mmBrenneke_AP</cookOffProjectile>
   </ThingDef>
@@ -67,9 +61,6 @@
       <texPath>Things/Ammo/HighCaliber/Incendiary</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.29</MarketValue>
-    </statBases>
     <ammoClass>IncendiaryAP</ammoClass>
     <cookOffProjectile>Bullet_93x64mmBrenneke_Incendiary</cookOffProjectile>
   </ThingDef>
@@ -80,9 +71,6 @@
       <texPath>Things/Ammo/HighCaliber/HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <statBases>
-      <MarketValue>0.34</MarketValue>
-    </statBases>
     <ammoClass>ExplosiveAP</ammoClass>
     <cookOffProjectile>Bullet_93x64mmBrenneke_HE</cookOffProjectile>
   </ThingDef>
@@ -94,7 +82,6 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.2</MarketValue>
       <Mass>0.035</Mass>
     </statBases>
     <ammoClass>Sabot</ammoClass>
