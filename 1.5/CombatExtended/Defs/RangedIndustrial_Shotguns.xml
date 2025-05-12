@@ -20,10 +20,10 @@
       <SwayFactor>1.48</SwayFactor>
       <Bulk>11.62</Bulk>
       <SightsEfficiency>1</SightsEfficiency>
-      <WorkToMake>10500</WorkToMake>
+      <WorkToMake>15000</WorkToMake>
     </statBases>
     <costList>
-      <Steel>55</Steel>
+      <Steel>60</Steel>
       <WoodLog>10</WoodLog>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
@@ -139,7 +139,7 @@
       <SwayFactor>0.83</SwayFactor>
       <Bulk>5.81</Bulk>
       <SightsEfficiency>0.5</SightsEfficiency>
-      <WorkToMake>8500</WorkToMake>
+      <WorkToMake>11500</WorkToMake>
     </statBases>
     <costList>
       <Steel>40</Steel>

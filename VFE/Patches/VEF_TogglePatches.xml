@@ -467,8 +467,26 @@
           <label>Mk14 EBR</label>
         </value>
       </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk18ABR_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk18ABR_Blk"]/label</xpath>
+          <value>
+            <label>Mk14 EBR (Black)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk18ABR_Snk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk18ABR_Snk"]/label</xpath>
+          <value>
+            <label>Mk14 EBR (Snake)</label>
+          </value>
+        </match>
+      </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="UACGGun_Mk18ABR"]/description</xpath>
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk18ABR"]/description</xpath>
         <value>
           <description>The Mk14 Enhanced Battle Rifle is a more compact and lightweight evolution of the M14 Battle Rifle. The EBR is an ergonomic rifle that can be accessorized and was designed for high accuracy. It's chambered for a 7.62x51mm cartridge and is typically used in ranges from 600 - 800 m.</description>
         </value>
@@ -505,8 +523,26 @@
           <label>VS-121</label>
         </value>
       </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Rahim_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Rahim_Blk"]/label</xpath>
+          <value>
+            <label>VS-121 (Black)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Rahim_Tan"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Rahim_Tan"]/label</xpath>
+          <value>
+            <label>VS-121 (Tan)</label>
+          </value>
+        </match>
+      </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="UACGGun_Rahim"]/description</xpath>
+        <xpath>/Defs/ThingDef[@Name="HID_BaseRahim"]/description</xpath>
         <value>
           <description>The VS-121 7.62mm is a bullpup rifle serving as a designated marksman weapon for the OPFOR. It's based on an older Russian rifle with upgraded modern features such as firing mechanism, trigger and rail. The bullpup design allows the rifle to be more compact and maneuverable without shortening the barrel.</description>
         </value>
@@ -658,6 +694,80 @@
           <value>
             <description>The M3A1 MAAWS (Multi-role Anti-armor Anti-personnel Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The M3A1 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The M3A1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
           </value>
+        </match>
+      </li>
+      <!--=Attachments=-->
+      <li Class="PatchOperationFindMod">
+        <mods>
+          <li>2035 Armories - Weapon Modularization Compatibility</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <!--=Collimators/Holo Sights=-->
+            <!--C-More Railway-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_ACO"]/label</xpath>
+              <value>
+                <label>C-More Railway</label>
+              </value>
+            </li>
+            <!--EOTech MRDS-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_MRD_Snd"]/label</xpath>
+              <value>
+                <label>EOTech MRDS (Sand)</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_MRD_Blk"]/label</xpath>
+              <value>
+                <label>EOTech MRDS (Black)</label>
+              </value>
+            </li>
+            <!--Burris FastFire 2-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_Yorris"]/label</xpath>
+              <value>
+                <label>Burris FastFire 2</label>
+              </value>
+            </li>
+            <!--EOTech XPS3-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_Mk17Holosight_Blk"]/label</xpath>
+              <value>
+                <label>EOTech XPS3 (Black)</label>
+              </value>
+            </li>
+            <!--=Riflescopes=-->
+            <!--Leupold Mark 4 HAMR-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_RCO_Blk"]/label</xpath>
+              <value>
+                <label>Leupold Mark 4 HAMR (Black)</label>
+              </value>
+            </li>
+            <!--=Sniper Scopes=-->
+            <!--US Optics MR-10-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_AMS_Blk"]/label</xpath>
+              <value>
+                <label>US Optics MR-10 (Black)</label>
+              </value>
+            </li>
+            <!--KAHLES Helia-->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_Kahlia_Blk"]/label</xpath>
+              <value>
+                <label>KAHLES Helia (Black)</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="HIDModule_optic_Kahlia_Old"]/label</xpath>
+              <value>
+                <label>KAHLES Helia (Old)</label>
+              </value>
+            </li>
+          </operations>
         </match>
       </li>
     </operations>
