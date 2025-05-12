@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <label>Use real-life equivalent weapon names:</label>
+    <operations>
+      <!--=Handguns=-->
+      <!--FNX-45 Tactical-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_4five_Snd"]/label</xpath>
+        <value>
+          <label>FNX-45 Tactical</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_4five_Grn"]/label</xpath>
+        <value>
+          <label>FNX-45 Tactical (Green)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_Base4five"]/description</xpath>
+        <value>
+          <description>The FNX-45 Tactical is a polymer-based semi-automatic pistol named for using .45 ACP ammunition. The reliability and accuracy are the most appraised features of this weapon. This weapon is favored by firing drill competitors because of its fifteen round magazine and available collimator sight.</description>
+        </value>
+      </li>
+      <!--Kimber Custom Covert II-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_ACPCtwo"]/label</xpath>
+        <value>
+          <label>Kimber Custom Covert II</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_ACPCtwo"]/description</xpath>
+        <value>
+          <description>The Custom Covert II is a custom version of the classic M1911. A single-action self-loading pistol design remained and new materials allowed even better speed, precision and increased durability. The Custom Covert II is equipped with self-illuminating sights that provide a tactical advantage in low light conditions.</description>
+        </value>
+      </li>
+      <!--Walther P99-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Pseven_Snd"]/label</xpath>
+        <value>
+          <label>Walther P99</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Pseven_Blk"]/label</xpath>
+        <value>
+          <label>Walther P99 (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Pseven_Khk"]/label</xpath>
+        <value>
+          <label>Walther P99 (Khaki)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BasePseven"]/description</xpath>
+        <value>
+          <description>The P99 is a semi-automatic pistol with a frame that combines metal and reinforced polymer. Following the success of Glock, polymer based pistols became known as perfect handguns for both military use and self-defense and are available in various calibers.</description>
+        </value>
+      </li>
+      <!--Makarov PMM-->
+      <!--###Description Not Needed-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MakarovPM"]/label</xpath>
+        <value>
+          <label>Makarov PMM</label>
+        </value>
+      </li>
+      <!--MP-443 Grach-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_RookForty"]/label</xpath>
+        <value>
+          <label>MP-443 Grach</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_RookForty"]/description</xpath>
+        <value>
+          <description>The MP-443 Grach is a double action, short recoil operated, locked breech pistol. Its steel construction makes it a bit retro, but compared to contemporary lightweight polymer pistols, it feels sturdier. It fires 9x19mm ammunition and comes with tritium-filled night sights.</description>
+        </value>
+      </li>
+      <!--Chiappa Rhino 60DS-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Zubr"]/label</xpath>
+        <value>
+          <label>Chiappa Rhino 60DS</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Zubr"]/description</xpath>
+        <value>
+          <description>The Chiappa Rhino .357 Magnum is a revolver handgun with a distinctive design. The muzzle position is aligned with the bottom chamber. Compared to normal topmost revolvers, this change reduces the muzzle flip after shooting by directing the recoil more into the shooter's wrist.</description>
+        </value>
+      </li>
+      <!--=Submachine guns=-->
+      <!--CPW-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_PDW2k"]/label</xpath>
+        <value>
+          <label>CPW</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_PDW2k"]/description</xpath>
+        <value>
+          <description>The CPW is a widespread submachine gun favored for its size and low recoil. The weapon has a conventional submachine gun layout with the magazine housed in the pistol grip and mirrored controls to achieve a truly ambidextrous use. Its low weight and small profile can be compared with some larger pistols. Two rails for mounting sights and tactical accessories underline the weapon's utility.</description>
+        </value>
+      </li>
+      <!--MP5K-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_ProtectorSMG"]/label</xpath>
+        <value>
+          <label>MP5K</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_ProtectorSMG"]/description</xpath>
+        <value>
+          <description>A lightweight, air-cooled, selective fire, delayed blowback operated submachine gun with a roller-delayed bolt. The compact size, accuracy and high rate of fire of the MP5K are highly regarded and the gun is used in many variants by numerous military, law enforcement, intelligence and security organizations all around the world.</description>
+        </value>
+      </li>
+      <!--CZ Scorpion Evo 3 A1-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_StingSMG"]/label</xpath>
+        <value>
+          <label>CZ Scorpion Evo 3 A1</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_StingSMG"]/description</xpath>
+        <value>
+          <description>The Scorpion Evo 3 is a 9x19mm submachine gun. The weapon is designed to be used by security forces, vehicle crews and special forces. Due to its small size, accuracy, ambidextrous use and rate of fire, it became a popular SMG around the world.</description>
+        </value>
+      </li>
+      <!--KRISS Vector-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_VerminSMG"]/label</xpath>
+        <value>
+          <label>KRISS Vector</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_VerminSMG"]/description</xpath>
+        <value>
+          <description>The Vector SMG utilizes a downward pointed recoil force together with an inline design, moving barrel to line with the shooter's shoulder and hand to reduce the amount of recoil as well as muzzle climb. This greatly enhances the weapon's accuracy.</description>
+        </value>
+      </li>
+      <!--=Shotguns=-->
+      <!--CZ 581-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Kozlice"]/label</xpath>
+        <value>
+          <label>CZ 581</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_KozliceShort"]/label</xpath>
+        <value>
+          <label>CZ 581 (sawed-off)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Kozlice" or defName="UACGGun_KozliceShort"]/description</xpath>
+        <value>
+          <description>The CZ 581 is a trusty old shotgun still found in many parts of Eastern Europe. It is a low-tech yet powerful weapon typically used by hunters. Unlike some other double-barreled shotguns, the Kozlice employs an over/under design, placing the two 12 gauge barrels in vertical alignment. These can either be loaded with slug or buckshot shells. Certain criminal elements have been known to improvise sawed-off versions of the shotgun. These are easier to conceal and operate in confined spaces, but also have a reduced effective range.</description>
+        </value>
+      </li>
+      <!--CZ 581 saw RECIPE-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_UACGGun_KozliceShort"]/label</xpath>
+        <value>
+          <label>make CZ 581 (sawed-off)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_UACGGun_KozliceShort"]/description</xpath>
+        <value>
+          <description>The CZ 581 is a trusty old shotgun still found in many parts of Eastern Europe. It is a low-tech yet powerful weapon typically used by hunters. Unlike some other double-barreled shotguns, the Kozlice employs an over/under design, placing the two 12 gauge barrels in vertical alignment. These can either be loaded with slug or buckshot shells. Certain criminal elements have been known to improvise sawed-off versions of the shotgun. These are easier to conceal and operate in confined spaces, but also have a reduced effective range.</description>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_UACGGun_KozliceShort"]/jobString</xpath>
+        <value>
+          <jobString>sawing CZ 581.</jobString>
+        </value>
+      </li>
+      <!--=Carbines=-->
+      <!--AK-15K-->
+      <!--###Description Not Needed-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_AKU12Gun"]/label</xpath>
+        <value>
+          <label>AK-15K</label>
+        </value>
+      </li>
+      <!--F2000 Tactical-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20C_Camo"]/label</xpath>
+        <value>
+          <label>F2000 Tactical (Camo)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20C_Snd"]/label</xpath>
+        <value>
+          <label>F2000 Tactical</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk20C"]/description</xpath>
+        <value>
+          <description>The F2000 is a gas-operated rotating bolt, selective-fire weapon, which was designed as a highly moddable weapon. Its design and front ejection system allows true ambidextrous use.</description>
+        </value>
+      </li>
+      <!--Tavor CTAR-21-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG20Gun"]/label</xpath>
+        <value>
+          <label>Tavor CTAR-21</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG20Gun"]/description</xpath>
+        <value>
+          <description>The Tavor TAR-21 is a bullpup assault rifle used by the FIA. It features an ergonomical design that supports accurate fire in harsh conditions. TAR-21 is lightweight, ambidextrous, easily serviceable and compatible with a large number of accessories. TAR-21 EGLM is mounted with an enhanced grenade launching module. A carbine variant is labeled CTAR-21. Compared to TAR-21, it features a short barrel better suited for close quarters combat situations.</description>
+        </value>
+      </li>
+      <!--=Assault Rifles=-->
+      <!--AK-15-->
+      <!--###Description Not Needed-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_AK12Gun"]/label</xpath>
+        <value>
+          <label>AK-15</label>
+        </value>
+      </li>
+      <!--AK-15 GL-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_AK12GL"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_AK12GL"]/label</xpath>
+          <value>
+            <label>AK-15 GL</label>
+          </value>
+        </match>
+      </li>
+      <!--QBZ-95-1-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CAR95Gun"]/label</xpath>
+        <value>
+          <label>QBZ-95-1</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CAR95Gun" or defName="UACGGun_CAR951Gun"]/description</xpath>
+        <value>
+          <description>A bullpup style assault rifle used by CSAT Pacific forces. It works as a common platform for different weapon types: a standard rifle, GL variant with attached grenade launcher, and a light support version with a longer barrel and drum magazine. QBZ-95-1 uses polymer materials in its construction and fires 5.8x42mm small-caliber, high-velocity bullets.</description>
+        </value>
+      </li>
+      <!--QBZ-95-1 GL-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CAR95GL"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_CAR95GL"]/label</xpath>
+          <value>
+            <label>QBZ-95-1 GL</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CAR95GL"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_CAR95GL"]/description</xpath>
+          <value>
+            <description>A bullpup style assault rifle used by CSAT Pacific forces. It works as a common platform for different weapon types: a standard rifle, GL variant with attached grenade launcher, and a light support version with a longer barrel and drum magazine. QBZ-95-1 uses polymer materials in its construction and fires 5.8x42mm small-caliber, high-velocity bullets.</description>
+          </value>
+        </match>
+      </li>
+      <!--F2000 Tactical LB-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20_Camo"]/label</xpath>
+        <value>
+          <label>F2000 Tactical LB (Camo)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20_Snd"]/label</xpath>
+        <value>
+          <label>F2000 Tactical LB</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk20Gun"]/description</xpath>
+        <value>
+          <description>The F2000 is a gas-operated rotating bolt, selective-fire weapon, which was designed as a highly moddable weapon. Its design and front ejection system allows true ambidextrous use.</description>
+        </value>
+      </li>
+      <!--F2000 Tactical EGLM-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20EGLM_Camo"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk20EGLM_Camo"]/label</xpath>
+          <value>
+            <label>F2000 Tactical EGLM (Camo)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk20EGLM_Snd"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk20EGLM_Snd"]/label</xpath>
+          <value>
+            <label>F2000 Tactical EGLM</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk20EGLM"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="HID_BaseMk20EGLM"]/description</xpath>
+          <value>
+            <description>The F2000 is a gas-operated rotating bolt, selective-fire weapon, which was designed as a highly moddable weapon. Its design and front ejection system allows true ambidextrous use.</description>
+          </value>
+        </match>
+      </li>
+      <!--HK416A5 11"-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16C_Blk"]/label</xpath>
+        <value>
+          <label>HK416A5 11" (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16C_Khk"]/label</xpath>
+        <value>
+          <label>HK416A5 11" (Khaki)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16C_Snd"]/label</xpath>
+        <value>
+          <label>HK416A5 11" (Sand)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseSpar16C"]/description</xpath>
+        <value>
+          <description>The HK416A5 is a standard issue assault rifle of CTRG units in the Pacific, chambered for 5.56mm ammunition. The gun is a reliable rifle compatible with a large number of accessories. Multiple variants of this rifle exist, each suitable for a different role. The HK416A5 GL is equipped with an underslung grenade launcher, while the 20 inch HK416A5 variant with its thicker barrel and drum magazine works as a light support weapon.</description>
+        </value>
+      </li>
+      <!--HK416A5 11" GL-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SPAR16GL_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16GL_Blk"]/label</xpath>
+          <value>
+            <label>HK416A5 11" GL (Black)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SPAR16GL_Khk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16GL_Khk"]/label</xpath>
+          <value>
+            <label>HK416A5 11" GL (Khaki)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SPAR16GL_Snd"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16GL_Snd"]/label</xpath>
+          <value>
+            <label>HK416A5 11" GL (Sand)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseSPAR16GL"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="HID_BaseSPAR16GL"]/description</xpath>
+          <value>
+            <description>The HK416A5 is a standard issue assault rifle of CTRG units in the Pacific, chambered for 5.56mm ammunition. The gun is a reliable rifle compatible with a large number of accessories. Multiple variants of this rifle exist, each suitable for a different role. The HK416A5 GL is equipped with an underslung grenade launcher, while the 20 inch HK416A5 variant with its thicker barrel and drum magazine works as a light support weapon.</description>
+          </value>
+        </match>
+      </li>
+      <!--Tavor TAR-21-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG21Gun"]/label</xpath>
+        <value>
+          <label>Tavor TAR-21</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG21Gun"]/description</xpath>
+        <value>
+          <description>The Tavor TAR-21 is a bullpup assault rifle used by the FIA. It features an ergonomical design that supports accurate fire in harsh conditions. TAR-21 is lightweight, ambidextrous, easily serviceable and compatible with a large number of accessories. TAR-21 EGLM is mounted with an enhanced grenade launching module. A carbine variant is labeled CTAR-21. Compared to TAR-21, it features a short barrel better suited for close quarters combat situations.</description>
+        </value>
+      </li>
+      <!--Tavor GTAR-21 EGLM-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG21EGLM"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_TRG21EGLM"]/label</xpath>
+          <value>
+            <label>Tavor GTAR-21 EGLM</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_TRG21EGLM"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_TRG21EGLM"]/description</xpath>
+          <value>
+            <description>The Tavor TAR-21 is a bullpup assault rifle used by the FIA. It features an ergonomical design that supports accurate fire in harsh conditions. TAR-21 is lightweight, ambidextrous, easily serviceable and compatible with a large number of accessories. TAR-21 EGLM is mounted with an enhanced grenade launching module. A carbine variant is labeled CTAR-21. Compared to TAR-21, it features a short barrel better suited for close quarters combat situations.</description>
+          </value>
+        </match>
+      </li>
+      <!--=Designated Marksman Rifles=-->
+      <!--QBU-88-1-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CMR76_Blk"]/label</xpath>
+        <value>
+          <label>QBU-88-1 (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CMR76_Blk"]/description</xpath>
+        <value>
+          <description>Designated marksman rifle of an Eastern origin. It is a gas operated, semi-automatic rifle of a bullpup construction. The housing is made of polymer. The rifle is chambered in 6.5mm and therefore is most suited to ranges from 500 to 700 meters. The QBU-88-1 is missing both the sides and the bottom rails but is equipped with a bipod by default.</description>
+        </value>
+      </li>
+      <!--M14-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk14DMR_Camo"]/label</xpath>
+        <value>
+          <label>M14 (Camo)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk14DMR_Olv"]/label</xpath>
+        <value>
+          <label>M14 (Olive)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk14DMR_Classic"]/label</xpath>
+        <value>
+          <label>M14 (Classic)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk14DMR" or defName="UACGGun_Mk14DMR_Classic"]/description</xpath>
+        <value>
+          <description>The M14 is a classic battle rifle used in service since the sixties. It is a selective fire automatic rifle that fires the 7.62x51mm NATO ammunition. M14 was replaced by advanced modern variants like the Mk14 EBR, but thanks to its low cost, simple construction, and reliability, it is still used in several countries.</description>
+        </value>
+      </li>
+      <!--Mk14 EBR-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk18ABR"]/label</xpath>
+        <value>
+          <label>Mk14 EBR</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Mk18ABR"]/description</xpath>
+        <value>
+          <description>The Mk14 Enhanced Battle Rifle is a more compact and lightweight evolution of the M14 Battle Rifle. The EBR is an ergonomic rifle that can be accessorized and was designed for high accuracy. It's chambered for a 7.62x51mm cartridge and is typically used in ranges from 600 - 800 m.</description>
+        </value>
+      </li>
+      <!--Noreen "Bad News" ULR-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MARIO_Blk"]/label</xpath>
+        <value>
+          <label>Noreen "Bad News" ULR (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MARIO_Camo"]/label</xpath>
+        <value>
+          <label>Noreen "Bad News" ULR (Camo)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MARIO_Snd"]/label</xpath>
+        <value>
+          <label>Noreen "Bad News" ULR (Sand)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMARIO"]/description</xpath>
+        <value>
+          <description>The Bad News is a powerful marksman weapon used by CTRG forces. This semi-automatic rifle is chambered in .338 Lapua Magnum. With its 50cm long barrel and 4.4kg base weight, Bad News isn't easy to handle, but high power and extreme precision with effective range up to 1700m compensate it.</description>
+        </value>
+      </li>
+      <!--VS-121-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Rahim"]/label</xpath>
+        <value>
+          <label>VS-121</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_Rahim"]/description</xpath>
+        <value>
+          <description>The VS-121 7.62mm is a bullpup rifle serving as a designated marksman weapon for the OPFOR. It's based on an older Russian rifle with upgraded modern features such as firing mechanism, trigger and rail. The bullpup design allows the rifle to be more compact and maneuverable without shortening the barrel.</description>
+        </value>
+      </li>
+      <!--HK417A2 20"-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR17_Blk"]/label</xpath>
+        <value>
+          <label>HK417A2 20" (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR17_Khk"]/label</xpath>
+        <value>
+          <label>HK417A2 20" (Khaki)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR17_Snd"]/label</xpath>
+        <value>
+          <label>HK417A2 20" (Sand)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_SPAR17DMR"]/description</xpath>
+        <value>
+          <description>The HK417A2 designated marksman rifle is in many ways similar to the HK416. The main difference is the chambering to 7.62mm which also means a longer, thicker barrel and more weight. Thanks to the more powerful ammunition, the HK417A2 is most suitable for ranges from 600 to 800 meters. The rifle offers a single and full auto mode and is, like the HK416, compatible with a large number of accessories.</description>
+        </value>
+      </li>
+      <!--=Sniper Rifles=-->
+      <!--Cheytac M200 Intervention-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_M320LRR_Blk"]/label</xpath>
+        <value>
+          <label>Cheytac M200 Intervention</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_M320LRR_Blk"]/description</xpath>
+        <value>
+          <description>Intervention is a .408 caliber sniper rifle developed in the United States. The M200 Intervention is a bolt-action rifle valued for its accuracy up to 2000 meters.</description>
+        </value>
+      </li>
+      <!--=Squad Automatic Weapons=-->
+      <!--QBZ-95-1 LSW-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_CAR951Gun"]/label</xpath>
+        <value>
+          <label>QBZ-95-1 LSW</label>
+        </value>
+      </li>
+      <!--FN Minimi SPW-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_LIM85_Saw"]/label</xpath>
+        <value>
+          <label>FN Minimi SPW</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_LIM85_Saw"]/description</xpath>
+        <value>
+          <description>The Minimi is an iteration of a special purpose weapon. Combining a high fire-rate and relatively easy maintenance, it was adopted by several armies around the world. It features standard accessory rails and 200-round box 5.56x45 mm magazines. It weighs 7.1 kilograms, which is less than its predecessors.</description>
+        </value>
+      </li>
+      <!--Mk200 Description-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMk200SAW"]/description</xpath>
+        <value>
+          <description>The Mk200 is a gas-operated light machine gun based on the Stoner LMG with ergonomical grips, reinforced lock and quick barrel removal system. It fires 6.5x39 mm (caseless) ammunition fed from a belt with a rate of 800 rounds per minute. The Mk200 provides the squad with the accurate and sustained fire-power required to suppress and destroy enemy targets.</description>
+        </value>
+      </li>
+      <!--RPK-15-->
+      <!--###Description Not Needed-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_RPK12Gun"]/label</xpath>
+        <value>
+          <label>RPK-15</label>
+        </value>
+      </li>
+      <!--HK416A5 14.5"-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16S_Blk"]/label</xpath>
+        <value>
+          <label>HK416A5 14.5" (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16S_Khk"]/label</xpath>
+        <value>
+          <label>HK416A5 14.5" (Khaki)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPAR16S_Snd"]/label</xpath>
+        <value>
+          <label>HK416A5 14.5" (Sand)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseSpar16S"]/description</xpath>
+        <value>
+          <description>The HK416A5 is a standard issue assault rifle of CTRG units in the Pacific, chambered for 5.56mm ammunition. The gun is a reliable rifle compatible with a large number of accessories. Multiple variants of this rifle exist, each suitable for a different role. The HK416A5 GL is equipped with an underslung grenade launcher, while the 20 inch HK416A5 variant with its thicker barrel and drum magazine works as a light support weapon.</description>
+        </value>
+      </li>
+      <!--=Machineguns=-->
+      <!--RM338-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPMG_Snd"]/label</xpath>
+        <value>
+          <label>RM338 (Sand)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SPMG_Blk"]/label</xpath>
+        <value>
+          <label>RM338 (Black)</label>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseSPMG"]/description</xpath>
+        <value>
+          <description>The RM338 (formerly known as the LWMMG) is a lightweight medium machine gun, which greatly benefits from modern materials. It is designed to fill the gap between 7.62mm and .50 cal machine guns. The RM338 uses .338 Norma Magnum bullets. The effective range of the machine gun is 1500 meters, and thanks to advanced technology, it has low recoil.</description>
+        </value>
+      </li>
+      <!--=Launchers=-->
+      <!--M3A1 MAAWS-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Grn"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Grn"]/label</xpath>
+          <value>
+            <label>M3A1 MAAWS (Green)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Snd"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Snd"]/label</xpath>
+          <value>
+            <label>M3A1 MAAWS (Sand)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne"]/description</xpath>
+          <value>
+            <description>The M3A1 MAAWS (Multi-role Anti-armor Anti-personnel Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The M3A1 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The M3A1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
+          </value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <label>[CE] Remove duplicate weapons from Combat Extended submods:</label>
+    <operations>
+      <!--CE Guns-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <!--CE Armory-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_AKSSeventyFourU"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_AKSSeventyFourU"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_CarlGustaf"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_CarlGustaf"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

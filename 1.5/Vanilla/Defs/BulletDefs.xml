@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Bullets-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>UACGBullet_357Magnum</defName>
+    <label>revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>0.8</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>UACGBullet_9mm</defName>
+    <label>pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>UACGBullet_65mmCaseless</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <speed>67</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_762x39mm</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>0.75</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_762mm</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>0.25</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_93mmBrenneke</defName>
+    <label>magnum rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>26</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>140</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_338LapuaLMG</defName>
+    <label>magnum rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>166</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

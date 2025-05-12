@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=SHOTGUNS=-->
+  <!--Kozlice <3-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UACGGun_Kozlice</defName>
+    <label>Kozlice</label>
+    <description>The Kozlice 12G is a trusty old shotgun still found in many parts of Eastern Europe. It is a low-tech yet powerful weapon typically used by hunters. Unlike some other double-barreled shotguns, the Kozlice employs an over/under design, placing the two 12 gauge barrels in vertical alignment. These can either be loaded with slug or buckshot shells. Certain criminal elements have been known to improvise sawed-off versions of the shotgun. These are easier to conceal and operate in confined spaces, but also have a reduced effective range.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_Kozlice</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.62,1.62)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <Mass>3.18</Mass>
+      <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>1.48</SwayFactor>
+      <Bulk>11.62</Bulk>
+      <SightsEfficiency>1</SightsEfficiency>
+      <WorkToMake>10500</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <WoodLog>10</WoodLog>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.67</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>20</range>
+        <soundCast>HID_Shot_A3Kozlice</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>2</magazineSize>
+        <AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
+        <reloadTime>0.85</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <ammoSet>AmmoSet_12Gauge</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>ShortShots</li>
+      <li>CE_AI_BROOM</li>
+      <li>A3Kozlice</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.0</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.8,1)</drawSize>
+        <offsets>
+          <li>(0.99,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Kozlice Short-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UACGGun_KozliceShort</defName>
+    <label>Kozlice (sawed-off)</label>
+    <description>The Kozlice 12G is a trusty old shotgun still found in many parts of Eastern Europe. It is a low-tech yet powerful weapon typically used by hunters. Unlike some other double-barreled shotguns, the Kozlice employs an over/under design, placing the two 12 gauge barrels in vertical alignment. These can either be loaded with slug or buckshot shells. Certain criminal elements have been known to improvise sawed-off versions of the shotgun. These are easier to conceal and operate in confined spaces, but also have a reduced effective range.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_KozliceShort</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.08,1.08)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <statBases>
+      <Mass>2.45</Mass>
+      <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>0.83</SwayFactor>
+      <Bulk>5.81</Bulk>
+      <SightsEfficiency>0.5</SightsEfficiency>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <WoodLog>5</WoodLog>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.05</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_12Gauge_Buck_SB</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>14</range>
+        <soundCast>HID_Shot_A3KozliceSawedOff</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>2</magazineSize>
+        <AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
+        <reloadTime>0.85</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <ammoSet>AmmoSet_12Gauge_SB</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker IsNull="True"></recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>ShortShots</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>A3KozliceShort</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.1,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.0</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.8,1)</drawSize>
+        <offsets>
+          <li>(0.51,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

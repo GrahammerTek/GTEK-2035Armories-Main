@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Kozlice (sawed-off)-->
+  <RecipeDef>
+    <defName>Make_UACGGun_KozliceShort</defName>
+    <label>make Kozlice (sawed-off)</label>
+    <description>The Kozlice 12G is a trusty old shotgun still found in many parts of Eastern Europe. It is a low-tech yet powerful weapon typically used by hunters. Unlike some other double-barreled shotguns, the Kozlice employs an over/under design, placing the two 12 gauge barrels in vertical alignment. These can either be loaded with slug or buckshot shells. Certain criminal elements have been known to improvise sawed-off versions of the shotgun. These are easier to conceal and operate in confined spaces, but also have a reduced effective range.</description>
+    <jobString>sawing Kozlice.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <uiIconThing>UACGGun_KozliceShort</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UACGGun_Kozlice</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UACGGun_Kozlice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <UACGGun_KozliceShort>1</UACGGun_KozliceShort>
+      <WoodLog>5</WoodLog>
+      <Steel>5</Steel>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

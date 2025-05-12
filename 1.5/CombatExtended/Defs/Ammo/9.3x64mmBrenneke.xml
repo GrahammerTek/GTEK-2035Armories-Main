@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>Ammo93x64mmBrenneke</defName>
+    <label>9.3x64mm Brenneke</label>
+    <parent>AmmoHighCaliber</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+  </ThingCategoryDef>
+  <!-- ==================== AmmoSet ========================== -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_93x64mmBrenneke</defName>
+    <label>9.3x64mm Brenneke</label>
+    <ammoTypes>
+      <Ammo_93x64mmBrenneke_FMJ>Bullet_93x64mmBrenneke_FMJ</Ammo_93x64mmBrenneke_FMJ>
+      <Ammo_93x64mmBrenneke_AP>Bullet_93x64mmBrenneke_AP</Ammo_93x64mmBrenneke_AP>
+      <Ammo_93x64mmBrenneke_Incendiary>Bullet_93x64mmBrenneke_Incendiary</Ammo_93x64mmBrenneke_Incendiary>
+      <Ammo_93x64mmBrenneke_HE>Bullet_93x64mmBrenneke_HE</Ammo_93x64mmBrenneke_HE>
+      <Ammo_93x64mmBrenneke_Sabot>Bullet_93x64mmBrenneke_Sabot</Ammo_93x64mmBrenneke_Sabot>
+    </ammoTypes>
+    <similarTo>AmmoSet_RifleMagnum</similarTo>
+  </CombatExtended.AmmoSetDef>
+  <!-- ==================== Ammo ========================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" Name="93x64mmBrennekeBase" ParentName="AmmoBase" Abstract="True">
+    <description>The 9.3×64mm Brenneke is a rimless, bottlenecked, centerfire rifle cartridge originally developed for big-game hunting. It has since been chambered for some military long-range sniper rifles and machineguns.</description>
+    <statBases>
+      <Mass>0.043</Mass>
+      <Bulk>0.04</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Ammo93x64mmBrenneke</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="93x64mmBrennekeBase">
+    <defName>Ammo_93x64mmBrenneke_FMJ</defName>
+    <label>9.3x64mm Brenneke (FMJ)</label>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.18</MarketValue>
+    </statBases>
+    <ammoClass>FullMetalJacket</ammoClass>
+    <cookOffProjectile>Bullet_93x64mmBrenneke_FMJ</cookOffProjectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="93x64mmBrennekeBase">
+    <defName>Ammo_93x64mmBrenneke_AP</defName>
+    <label>9.3x64mm Brenneke (AP)</label>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/AP</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.18</MarketValue>
+    </statBases>
+    <ammoClass>ArmorPiercing</ammoClass>
+    <cookOffProjectile>Bullet_93x64mmBrenneke_AP</cookOffProjectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="93x64mmBrennekeBase">
+    <defName>Ammo_93x64mmBrenneke_Incendiary</defName>
+    <label>9.3x64mm Brenneke (AP-I)</label>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/Incendiary</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.29</MarketValue>
+    </statBases>
+    <ammoClass>IncendiaryAP</ammoClass>
+    <cookOffProjectile>Bullet_93x64mmBrenneke_Incendiary</cookOffProjectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="93x64mmBrennekeBase">
+    <defName>Ammo_93x64mmBrenneke_HE</defName>
+    <label>9.3x64mm Brenneke (AP-HE)</label>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/HE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.34</MarketValue>
+    </statBases>
+    <ammoClass>ExplosiveAP</ammoClass>
+    <cookOffProjectile>Bullet_93x64mmBrenneke_HE</cookOffProjectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="93x64mmBrennekeBase">
+    <defName>Ammo_93x64mmBrenneke_Sabot</defName>
+    <label>9.3x64mm Brenneke (Sabot)</label>
+    <graphicData>
+      <texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.2</MarketValue>
+      <Mass>0.035</Mass>
+    </statBases>
+    <ammoClass>Sabot</ammoClass>
+    <cookOffProjectile>Bullet_93x64mmBrenneke_Sabot</cookOffProjectile>
+  </ThingDef>
+  <!-- ================== Projectiles ================== -->
+  <ThingDef Name="Base93x64mmBrennekeBullet" ParentName="BaseBulletCE" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <speed>161</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base93x64mmBrennekeBullet">
+    <defName>Bullet_93x64mmBrenneke_FMJ</defName>
+    <label>9.3x64mm Brenneke bullet (FMJ)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>27</damageAmountBase>
+      <armorPenetrationSharp>10</armorPenetrationSharp>
+      <armorPenetrationBlunt>143.82</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base93x64mmBrennekeBullet">
+    <defName>Bullet_93x64mmBrenneke_AP</defName>
+    <label>9.3x64mm Brenneke bullet (AP)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>17</damageAmountBase>
+      <armorPenetrationSharp>20</armorPenetrationSharp>
+      <armorPenetrationBlunt>143.82</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base93x64mmBrennekeBullet">
+    <defName>Bullet_93x64mmBrenneke_Incendiary</defName>
+    <label>9.3x64mm Brenneke bullet (AP-I)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>17</damageAmountBase>
+      <armorPenetrationSharp>20</armorPenetrationSharp>
+      <armorPenetrationBlunt>143.82</armorPenetrationBlunt>
+      <secondaryDamage>
+        <li>
+          <def>Flame_Secondary</def>
+          <amount>8</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base93x64mmBrennekeBullet">
+    <defName>Bullet_93x64mmBrenneke_HE</defName>
+    <label>9.3x64mm Brenneke bullet (AP-HE)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>27</damageAmountBase>
+      <armorPenetrationSharp>10</armorPenetrationSharp>
+      <armorPenetrationBlunt>143.82</armorPenetrationBlunt>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>12</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base93x64mmBrennekeBullet">
+    <defName>Bullet_93x64mmBrenneke_Sabot</defName>
+    <label>9.3x64mm Brenneke bullet (Sabot)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationSharp>35</armorPenetrationSharp>
+      <armorPenetrationBlunt>186.14</armorPenetrationBlunt>
+      <speed>218</speed>
+    </projectile>
+  </ThingDef>
+  <!-- ==================== Recipes ========================== -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_93x64mmBrenneke_FMJ</defName>
+    <label>make 9.3x64mm Brenneke (FMJ) cartridge x200</label>
+    <description>Craft 200 9.3x64mm Brenneke (FMJ) cartridges.</description>
+    <jobString>Making 9.3x64mm Brenneke (FMJ) cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_93x64mmBrenneke_FMJ>200</Ammo_93x64mmBrenneke_FMJ>
+    </products>
+    <workAmount>1800</workAmount>
+  </RecipeDef>
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_93x64mmBrenneke_AP</defName>
+    <label>make 9.3x64mm Brenneke (AP) cartridge x200</label>
+    <description>Craft 200 9.3x64mm Brenneke (AP) cartridges.</description>
+    <jobString>Making 9.3x64mm Brenneke (AP) cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_93x64mmBrenneke_AP>200</Ammo_93x64mmBrenneke_AP>
+    </products>
+    <workAmount>2160</workAmount>
+  </RecipeDef>
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+    <defName>MakeAmmo_93x64mmBrenneke_Incendiary</defName>
+    <label>make 9.3x64mm Brenneke (AP-I) cartridge x200</label>
+    <description>Craft 200 9.3x64mm Brenneke (AP-I) cartridges.</description>
+    <jobString>Making 9.3x64mm Brenneke (AP-I) cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Prometheum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_93x64mmBrenneke_Incendiary>200</Ammo_93x64mmBrenneke_Incendiary>
+    </products>
+    <workAmount>2520</workAmount>
+  </RecipeDef>
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+    <defName>MakeAmmo_93x64mmBrenneke_HE</defName>
+    <label>make 9.3x64mm Brenneke (AP-HE) cartridge x200</label>
+    <description>Craft 200 9.3x64mm Brenneke (AP-HE) cartridges.</description>
+    <jobString>Making 9.3x64mm Brenneke (AP-HE) cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_93x64mmBrenneke_HE>200</Ammo_93x64mmBrenneke_HE>
+    </products>
+    <workAmount>3240</workAmount>
+  </RecipeDef>
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+    <defName>MakeAmmo_93x64mmBrenneke_Sabot</defName>
+    <label>make 9.3x64mm Brenneke (Sabot) cartridge x200</label>
+    <description>Craft 200 9.3x64mm Brenneke (Sabot) cartridges.</description>
+    <jobString>Making 9.3x64mm Brenneke (Sabot) cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Uranium</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_93x64mmBrenneke_Sabot>200</Ammo_93x64mmBrenneke_Sabot>
+    </products>
+    <workAmount>2160</workAmount>
+  </RecipeDef>
+</Defs>
