@@ -18,12 +18,12 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>3.20</SightsEfficiency>
       <ShotSpread>0.03</ShotSpread>
-      <SwayFactor>1.78</SwayFactor>
-      <Bulk>13.00</Bulk>
-      <WorkToMake>53000</WorkToMake>
+      <SwayFactor>1.72</SwayFactor>
+      <Bulk>10.14</Bulk>
+      <WorkToMake>55000</WorkToMake>
     </statBases>
     <costList>
-      <Steel>90</Steel>
+      <Steel>80</Steel>
       <ComponentIndustrial>9</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
