@@ -38,7 +38,7 @@
         <range>86</range>
         <soundCast>HID_Shot_A3GM6Lynx</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
     <comps>

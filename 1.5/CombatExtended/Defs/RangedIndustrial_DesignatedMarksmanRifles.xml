@@ -19,7 +19,7 @@
       <SwayFactor>1.36</SwayFactor>
       <Bulk>11.83</Bulk>
       <WorkToMake>31000</WorkToMake>
-      <NightVisionEfficiency_Weapon>0.6</NightVisionEfficiency_Weapon>
+      <NightVisionEfficiency_Weapon>0.8</NightVisionEfficiency_Weapon>
     </statBases>
     <equippedStatOffsets>
       <AimingAccuracy>0.10</AimingAccuracy>
@@ -821,13 +821,9 @@
     </modExtensions>
   </ThingDef>
   <!--Mk18 ABR-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>UACGGun_Mk18ABR</defName>
-    <label>Mk18 ABR</label>
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMk18ABR" Abstract="True">
     <description>The Mk18 Advanced Battle Rifle is a more compact and lightweight evolution of the Mk14 Battle Rifle. The ABR is an ergonomic rifle that can be accessorized and was designed for high accuracy. It's chambered for a 7.62x51mm cartridge and is typically used in ranges from 600 - 800 m.</description>
     <graphicData>
-      <texPath>Things/Weapons/HIDGun_Mk18ABR</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -869,7 +865,6 @@
       <li>IndustrialGunAdvanced</li>
       <li>CE_AI_SR</li>
       <li>Bipod_Rifle</li>
-      <li>A3Mk18ABR</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -937,6 +932,17 @@
         </offsets>
       </li>
     </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseMk18ABR">
+    <defName>UACGGun_Mk18ABR</defName>
+    <label>Mk18 ABR</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_Mk18ABR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3Mk18ABR</li>
+    </weaponTags>
   </ThingDef>
   <!--MAR-10-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMARIO" Abstract="True">
@@ -1402,13 +1408,9 @@
     <recipeMaker IsNull="True"></recipeMaker>
   </ThingDef>
   <!--Rahim-->
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>UACGGun_Rahim</defName>
-    <label>Rahim</label>
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseRahim" Abstract="True">
     <description>The Rahim 7.62mm is a bullpup rifle serving as a designated marksman weapon for the OPFOR. It's based on the older Russian rifle with upgraded modern features such as firing mechanism, trigger and rail. The bullpup design allows the rifle to be more compact and maneuverable without shortening the barrel.</description>
     <graphicData>
-      <texPath>Things/Weapons/HIDGun_Rahim</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -1455,7 +1457,6 @@
       <li>IndustrialGunAdvanced</li>
       <li>CE_AI_SR</li>
       <li>Bipod_DMR</li>
-      <li>A3Rahim</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -1527,6 +1528,17 @@
         </offsets>
       </li>
     </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseRahim">
+    <defName>UACGGun_Rahim</defName>
+    <label>Rahim</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_Rahim</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3Rahim</li>
+    </weaponTags>
   </ThingDef>
   <!--SPAR-17-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_SPAR17DMR" Abstract="True">
