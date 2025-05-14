@@ -190,5 +190,10 @@
         <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>-0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>
