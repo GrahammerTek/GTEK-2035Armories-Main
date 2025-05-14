@@ -669,32 +669,23 @@
       </li>
       <!--=Launchers=-->
       <!--M3A1 MAAWS-->
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Grn"]</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Grn"]/label</xpath>
-          <value>
-            <label>M3A1 MAAWS (Green)</label>
-          </value>
-        </match>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Grn"]/label</xpath>
+        <value>
+          <label>M3A1 MAAWS (Green)</label>
+        </value>
       </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Snd"]</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Snd"]/label</xpath>
-          <value>
-            <label>M3A1 MAAWS (Sand)</label>
-          </value>
-        </match>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="UACGGun_MAAWSM4ModOne_Snd"]/label</xpath>
+        <value>
+          <label>M3A1 MAAWS (Sand)</label>
+        </value>
       </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne"]</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne"]/description</xpath>
-          <value>
-            <description>The M3A1 MAAWS (Multi-role Anti-armor Anti-personnel Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The M3A1 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The M3A1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
-          </value>
-        </match>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne"]/description</xpath>
+        <value>
+          <description>The M3A1 MAAWS (Multi-role Anti-armor Anti-personnel Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The M3A1 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The M3A1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
+        </value>
       </li>
       <!--=Attachments=-->
       <li Class="PatchOperationFindMod">
@@ -781,6 +772,14 @@
         <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
         <match Class="PatchOperationAttributeSet">
           <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_RPGSeven"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_RPGSeven"]</xpath>
           <attribute>Abstract</attribute>
           <value>True</value>
         </match>

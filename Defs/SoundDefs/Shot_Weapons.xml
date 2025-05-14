@@ -695,6 +695,7 @@
     </subSounds>
   </SoundDef>
   <!--=Launchers=-->
+  <!--MAAWS-->
   <SoundDef>
     <defName>HID_Shot_A3MAAWS</defName>
     <context>MapOnly</context>
@@ -704,6 +705,22 @@
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>Shot/Shot_GTEKM4MAAWS</clipPath>
+          </li>
+        </grains>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--RPG-7-->
+  <SoundDef>
+    <defName>HID_Shot_A3RPGSeven</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot/Shot_GTEKRPG7</clipPath>
           </li>
         </grains>
         <sustainLoop>False</sustainLoop>

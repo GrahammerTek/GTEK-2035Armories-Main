@@ -98,4 +98,42 @@
       <speed>166</speed>
     </projectile>
   </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_84x246mmR_HEAT</defName>
+    <label>HEAT shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>64</speed>
+      <damageAmountBase>110</damageAmountBase>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1</explosionRadius>
+      <stoppingPower>3.5</stoppingPower>
+      <armorPenetrationBase>1.2</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_RPG7Rocket</defName>
+    <label>HEAT rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>73</speed>
+      <damageAmountBase>150</damageAmountBase>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.5</explosionRadius>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
 </Defs>
