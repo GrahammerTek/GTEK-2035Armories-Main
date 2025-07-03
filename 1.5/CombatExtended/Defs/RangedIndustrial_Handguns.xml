@@ -52,7 +52,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>23</range>
+        <range>20</range>
         <soundCast>HID_Shot_A34Five</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -175,7 +175,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>18</range>
+        <range>16</range>
         <soundCast>HID_Shot_A3ACPCtwo</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -271,7 +271,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>20</range>
+        <range>18</range>
         <soundCast>HID_Shot_A3Pseven</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -504,7 +504,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>20</range>
+        <range>18</range>
         <soundCast>HID_Shot_A3RookForty</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
