@@ -29,7 +29,6 @@
             <clipPath>Shot/Shot_GTEKACPCtwo</clipPath>
           </li>
         </grains>
-        <volumeRange>60~60</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -46,7 +45,6 @@
             <clipPath>Shot/Shot_GTEKP07</clipPath>
           </li>
         </grains>
-        <volumeRange>60~60</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -63,7 +61,6 @@
             <clipPath>Shot/Shot_GTEKPM</clipPath>
           </li>
         </grains>
-        <volumeRange>60~60</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -80,7 +77,6 @@
             <clipPath>Shot/Shot_GTEKRookForty</clipPath>
           </li>
         </grains>
-        <volumeRange>60~60</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -164,6 +160,7 @@
             <clipPath>Shot/Shot_GTEKVermin</clipPath>
           </li>
         </grains>
+        <volumeRange>30~30</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -637,7 +634,7 @@
             <clipPath>Shot/Shot_GTEKGM6Lynx</clipPath>
           </li>
         </grains>
-        <volumeRange>70~70</volumeRange>
+        <volumeRange>60~60</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

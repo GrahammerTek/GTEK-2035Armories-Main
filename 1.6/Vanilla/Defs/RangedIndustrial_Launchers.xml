@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--MAAWS Mk4 Mod 1-->
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMAAWSM4ModOne" Abstract="True">
+    <defName>UACGGun_MAAWSM4ModOne</defName>
+    <description>The MAAWS Mk4 (Multi-role Anti-armor Anti-tank Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The Mk4 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The Mod 1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
+    <graphicData>
+      <drawSize>(1.2,1.2)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>29000</WorkToMake>
+      <Mass>6.60</Mass>
+      <RangedWeapon_Cooldown>5.6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_84x246mmR_HEAT</defaultProjectile>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <warmupTime>2.05</warmupTime>
+        <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+        <range>40.9</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>HID_Shot_A3MAAWS</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
+    <defName>UACGGun_MAAWSM4ModOne_Grn</defName>
+    <label>MAAWS Mk4 Mod 1 (Green)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_MAAWSMod1_Grn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3MAAWSM4Mod1Grn</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
+    <defName>UACGGun_MAAWSM4ModOne_Snd</defName>
+    <label>MAAWS Mk4 Mod 1 (Sand)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_MAAWSMod1_Snd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3MAAWSM4Mod1Grn</li>
+    </weaponTags>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--RPG-7-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UACGGun_RPGSeven</defName>
+    <label>RPG-7</label>
+    <description>The RPG-7 is a portable, reusable, unguided, shoulder-launched, anti-tank, rocket-propelled grenade launcher. The ruggedness, simplicity, low cost and effectiveness of the RPG-7 has made it the most widely used anti-armor weapon in the world. Currently, around 40 countries use the weapon and it is manufactured in several variants by nine countries. It is popular with irregular and guerrilla forces. The RPG has been used in almost all conflicts across all continents since the mid-1960s, from the Vietnam War to the early recent conflicts in the Pacific area.</description>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_RPG7</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.45</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>21500</WorkToMake>
+      <Mass>6.30</Mass>
+      <RangedWeapon_Cooldown>5.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>GunHeavy</li>
+      <li>A3RPG7</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_RPG7Rocket</defaultProjectile>
+        <forcedMissRadius>1.2</forcedMissRadius>
+        <warmupTime>1.9</warmupTime>
+        <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>HID_Shot_A3RPGSeven</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

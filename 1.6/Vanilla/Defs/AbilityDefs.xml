@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>HID_UnderbarrelGrenadeLauncher</defName>
+    <label>underbarrel launcher</label>
+    <description>Fire a grenade from the weapon's underbarrel launcher.</description>
+    <iconPath>UI/Abilities/HID_UnderbarrelGL</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>HID_Shot_A3UGLauncher</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>HID_40x46mmLauncherGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>HID_PrometUnderbarrelShotgun</defName>
+    <label>underbarrel shotgun</label>
+    <description>Fire a blast from the weapon's underbarrel shotgun.</description>
+    <iconPath>UI/Abilities/HID_UnderbarrelPrometSG</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>11.9</range>
+      <warmupTime>0.6</warmupTime>
+      <soundCast>HID_Shot_A3Undershotty</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Bullet_Shotgun</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>HID_Type115UnderbarrelAMR</defName>
+    <label>underbarrel AMR</label>
+    <description>Fire a round from the weapon's underbarrel rifle.</description>
+    <iconPath>UI/Abilities/HID_UnderbarrelAMR</iconPath>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>40.9</range>
+      <warmupTime>2.5</warmupTime>
+      <soundCast>HID_Shot_A3Type115AMR</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Bullet_SniperRifle</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HID_40x46mmLauncherGrenade</defName>
+    <label>grenade round</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.9</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.55</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+      <explosionDelay>5</explosionDelay>
+    </projectile>
+  </ThingDef>
+</Defs>

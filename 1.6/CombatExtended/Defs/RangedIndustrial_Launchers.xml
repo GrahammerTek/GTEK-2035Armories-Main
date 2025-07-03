@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--MAAWS Mk4 Mod 1-->
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMAAWSM4ModOne" Abstract="True">
+    <defName>UACGGun_MAAWSM4ModOne</defName>
+    <description>The MAAWS Mk4 (Multi-role Anti-armor Anti-tank Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The Mk4 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The Mod 1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
+    <graphicData>
+      <drawSize>(1.2,1.2)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>29000</WorkToMake>
+      <SightsEfficiency>2.18</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>1.64</SwayFactor>
+      <Bulk>10.50</Bulk>
+      <Mass>6.60</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <NightVisionEfficiency_Weapon>0.6</NightVisionEfficiency_Weapon>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingAccuracy>0.10</AimingAccuracy>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>GunHeavy</li>
+      <li>CE_AI_AOE</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_84x246mmR_HEAT</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>2.05</warmupTime>
+        <range>68</range>
+        <minRange>5</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>HID_Shot_A3MAAWS</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>5.6</reloadTime>
+        <ammoSet>AmmoSet_84x246mmR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite Inherit="false"></researchPrerequisite>
+      <researchPrerequisites>
+        <li>CE_Launchers</li>
+        <li>CE_AdvancedNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.44</cooldownTime>
+        <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>-0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
+    <defName>UACGGun_MAAWSM4ModOne_Grn</defName>
+    <label>MAAWS Mk4 Mod 1 (Green)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_MAAWSMod1_Grn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3MAAWSM4Mod1Grn</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
+    <defName>UACGGun_MAAWSM4ModOne_Snd</defName>
+    <label>MAAWS Mk4 Mod 1 (Sand)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_MAAWSMod1_Snd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3MAAWSM4Mod1Grn</li>
+    </weaponTags>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--RPG-7-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UACGGun_RPGSeven</defName>
+    <label>RPG-7</label>
+    <description>The RPG-7 is a portable, reusable, unguided, shoulder-launched, anti-tank, rocket-propelled grenade launcher. The ruggedness, simplicity, low cost and effectiveness of the RPG-7 has made it the most widely used anti-armor weapon in the world. Currently, around 40 countries use the weapon and it is manufactured in several variants by nine countries. It is popular with irregular and guerrilla forces. The RPG has been used in almost all conflicts across all continents since the mid-1960s, from the Vietnam War to the early recent conflicts in the Pacific area.</description>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_RPG7</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.45,1.45)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>21500</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>1.58</SwayFactor>
+      <Bulk>10.50</Bulk>
+      <Mass>6.30</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>GunHeavy</li>
+      <li>CE_AI_AOE</li>
+      <li>A3RPG7</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RPG7Grenade_HEAT</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>1.9</warmupTime>
+        <range>42</range>
+        <minRange>5</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>HID_Shot_A3RPGSeven</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>5.6</reloadTime>
+        <ammoSet>AmmoSet_RPG7Grenade</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>CE_Launchers</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.44</cooldownTime>
+        <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>-0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

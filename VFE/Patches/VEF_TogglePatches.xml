@@ -70,6 +70,152 @@
           <label>Makarov PMM</label>
         </value>
       </li>
+      <!--Glock 19X-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19S"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19S"]/label</xpath>
+          <value>
+            <label>Glock 19X</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19S_Khk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19S_Khk"]/label</xpath>
+          <value>
+            <label>Glock 19X (Khaki)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19S_Tan"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19S_Tan"]/label</xpath>
+          <value>
+            <label>Glock 19X (Tan)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="HID_BaseG19S"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="HID_BaseG19S" or @Name="HID_BaseG19A"]/description</xpath>
+          <value>
+            <description>Often used by military and police, the Glock 19X is a polymer-framed, short recoil-operated, semi-automatic pistol designed and produced in Austria. Special Forces operating overseas have been known to upgrade their pistols with custom-made auto switches that allow the weapon to operate in both semi-automatic and automatic firing modes. However, modifications like these are illegal in most countries and can carry high fines and even prison sentences.</description>
+          </value>
+        </match>
+      </li>
+      <!--Glock 19X Auto-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19A"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19A"]/label</xpath>
+          <value>
+            <label>Glock 19X Auto</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19A_Khk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19A_Khk"]/label</xpath>
+          <value>
+            <label>Glock 19X Auto (Khaki)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_G19A_Tan"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_G19A_Tan"]/label</xpath>
+          <value>
+            <label>Glock 19X Auto (Tan)</label>
+          </value>
+        </match>
+      </li>
+      <!--Glock 19X Auto RECIPE-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="Make_UACGGun_G19A"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/RecipeDef[defName="Make_UACGGun_G19A"]/label</xpath>
+              <value>
+                <label>make Glock 19X Auto</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/RecipeDef[defName="Make_UACGGun_G19A"]/description</xpath>
+              <value>
+                <description>Often used by military and police, the Glock 19X is a polymer-framed, short recoil-operated, semi-automatic pistol designed and produced in Austria. Special Forces operating overseas have been known to upgrade their pistols with custom-made auto switches that allow the weapon to operate in both semi-automatic and automatic firing modes. However, modifications like these are illegal in most countries and can carry high fines and even prison sentences.</description>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/RecipeDef[defName="Make_UACGGun_G19A"]/jobString</xpath>
+              <value>
+                <jobString>switching Glock 19X.</jobString>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <!--Desert Eagle Mark XIX L5-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk26Lfive"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk26Lfive"]/label</xpath>
+          <value>
+            <label>Desert Eagle Mark XIX L5</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk26Lfive_Bronze"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk26Lfive_Bronze"]/label</xpath>
+          <value>
+            <label>Desert Eagle Mark XIX L5 (Bronze)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk26Lfive_Classic"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk26Lfive_Classic"]/label</xpath>
+          <value>
+            <label>Desert Eagle Mark XIX L5 (Classic)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk26Lfive_Copper"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk26Lfive_Copper"]/label</xpath>
+          <value>
+            <label>Desert Eagle Mark XIX L5 (Copper)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Mk26Lfive_Gold"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Mk26Lfive_Gold"]/label</xpath>
+          <value>
+            <label>Desert Eagle Mark XIX L5 (Gold)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="HID_BaseMk26Lfive"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="HID_BaseMk26Lfive"]/description</xpath>
+          <value>
+            <description>Popularized by 80s action movies, the Desert Eagle is an American-made, gas-operated, semi-automatic pistol chambered in .50 Action Express. The modern L5 variant features Picatinny rails and a 5-inch barrel with an integrated muzzle brake to manage recoil.</description>
+          </value>
+        </match>
+      </li>
       <!--MP-443 Grach-->
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="UACGGun_RookForty"]/label</xpath>
@@ -143,8 +289,17 @@
           <label>KRISS Vector</label>
         </value>
       </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VerminSMG_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VerminSMG_Blk"]/label</xpath>
+          <value>
+            <label>KRISS Vector (Black)</label>
+          </value>
+        </match>
+      </li>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="UACGGun_VerminSMG"]/description</xpath>
+        <xpath>/Defs/ThingDef[@Name="HID_BaseVerminSMG"]/description</xpath>
         <value>
           <description>The Vector SMG utilizes a downward pointed recoil force together with an inline design, moving barrel to line with the shooter's shoulder and hand to reduce the amount of recoil as well as muzzle climb. This greatly enhances the weapon's accuracy.</description>
         </value>
@@ -228,6 +383,27 @@
         <value>
           <description>The Tavor TAR-21 is a bullpup assault rifle used by the FIA. It features an ergonomical design that supports accurate fire in harsh conditions. TAR-21 is lightweight, ambidextrous, easily serviceable and compatible with a large number of accessories. TAR-21 EGLM is mounted with an enhanced grenade launching module. A carbine variant is labeled CTAR-21. Compared to TAR-21, it features a short barrel better suited for close quarters combat situations.</description>
         </value>
+      </li>
+      <!--Vektor R5 Carbine-->
+      <!--###Description Not Needed-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFive"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelkoRFive"]/label</xpath>
+          <value>
+            <label>Vektor R5 Carbine</label>
+          </value>
+        </match>
+      </li>
+      <!--Vektor R5 Carbine GL-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFiveGL"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelkoRFiveGL"]/label</xpath>
+          <value>
+            <label>Vektor R5 Carbine GL</label>
+          </value>
+        </match>
       </li>
       <!--=Assault Rifles=-->
       <!--AK-15-->
@@ -418,6 +594,99 @@
           <xpath>/Defs/ThingDef[defName="UACGGun_TRG21EGLM"]/description</xpath>
           <value>
             <description>The Tavor TAR-21 is a bullpup assault rifle used by the FIA. It features an ergonomical design that supports accurate fire in harsh conditions. TAR-21 is lightweight, ambidextrous, easily serviceable and compatible with a large number of accessories. TAR-21 EGLM is mounted with an enhanced grenade launching module. A carbine variant is labeled CTAR-21. Compared to TAR-21, it features a short barrel better suited for close quarters combat situations.</description>
+          </value>
+        </match>
+      </li>
+      <!--Galil ARM-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_GalatARM"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_GalatARM"]/label</xpath>
+          <value>
+            <label>Galil ARM</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_GalatARM_Autorifleman"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_GalatARM_Autorifleman"]/label</xpath>
+          <value>
+            <label>Galil ARM Autorifleman</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_GalatARM_Old"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_GalatARM_Old"]/label</xpath>
+          <value>
+            <label>Galil ARM (Old)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="HID_BaseGalatARM" or defName="UACGGun_GalatARM_Autorifleman"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="HID_BaseGalatARM" or defName="UACGGun_GalatARM_Autorifleman"]/description</xpath>
+          <value>
+            <description>Originally designed by Yisrael Galili in the 1960s, the Israeli IMI Galil is still in use with military and police forces in over 25 countries. The Galil ARM is equipped with a carrying handle, folding bipod and a larger wooden handguard.\n\nThis particular variant is chambered for 7.62x39mm Soviet.</description>
+          </value>
+        </match>
+      </li>
+      <!--FN FAL-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SLR"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SLR"]/label</xpath>
+          <value>
+            <label>FN FAL</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SLR_Wood"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SLR_Wood"]/label</xpath>
+          <value>
+            <label>FN FAL (Wood)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="HID_BaseSLR"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="HID_BaseSLR"]/description</xpath>
+          <value>
+            <description>The Belgian FAL battle rifle is one of the most widely used rifles in history. Chambered for 7.62mm ammunition and outfitted with a heavy barrel, this variant acts primarily as a squad automatic weapon.</description>
+          </value>
+        </match>
+      </li>
+      <!--Vektor R4-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelkoRFour"]/label</xpath>
+          <value>
+            <label>Vektor R4</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour_Peacekeeper"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelkoRFour_Peacekeeper"]/label</xpath>
+          <value>
+            <label>Vektor R4 Peacekeeper</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper"]/description</xpath>
+          <value>
+            <description>The R4 is a South African licensed variant of the Israeli IMI Galil with several modifications applied. Besides being made of a high-strength polymer, differences include the lack of a carry handle and a number of improvements made to its internal operating mechanism.</description>
           </value>
         </match>
       </li>
@@ -768,6 +1037,14 @@
     <label>[CE] Remove duplicate weapons from Combat Extended submods:</label>
     <operations>
       <!--CE Guns-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
         <match Class="PatchOperationAttributeSet">

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=Sniper Rifles=-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_50Cal</defName>
+    <label>anti-materiel rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>56</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+  <!--GM6 Lynx-->
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseGM6Lynx" Abstract="True">
+    <description>The Gepard GM6 Lynx is a semi-automatic anti-material rifle using Russian 12.7x108mm ammo. Its purpose is to stop or disable targets such as light armored vehicles, light shelters and helicopters from 600–800 m range. Due to its weight and portability, it is good for parachute, airmobile and territorial troops. The barrel recoil technology brings the recoil of the GM6 below the recoil of other rifles in the same category. The weapon is highly accurate and effective up to a range of 1500m.</description>
+    <graphicData>
+      <drawSize>(1.595,1.595)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.33</generateCommonality>
+    <equippedDistanceOffset>0.24</equippedDistanceOffset>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>53000</WorkToMake>
+      <Mass>12.21</Mass>
+      <AccuracyTouch>0.38</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>2.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_50Cal</defaultProjectile>
+        <warmupTime>3.6</warmupTime>
+        <range>49.9</range>
+        <soundCast>HID_Shot_A3GM6Lynx</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseGM6Lynx">
+    <defName>UACGGun_GM6Lynx_Blk</defName>
+    <label>GM6 Lynx</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_GM6Lynx_Blk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3GM6LynxBlk</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseGM6Lynx">
+    <defName>UACGGun_GM6Lynx_Hex</defName>
+    <label>GM6 Lynx (Hex)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_GM6Lynx_Hex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3GM6LynxHex</li>
+    </weaponTags>
+    <recipeMaker IsNull="True"></recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="HID_BaseGM6Lynx">
+    <defName>UACGGun_GM6Lynx_GrnHex</defName>
+    <label>GM6 Lynx (Green Hex)</label>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_GM6Lynx_GrnHex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>A3GM6LynxGrnHex</li>
+    </weaponTags>
+    <recipeMaker IsNull="True"></recipeMaker>
+  </ThingDef>
+  <!--M320 LRR-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UACGGun_M320LRR_Blk</defName>
+    <label>M320 LRR</label>
+    <description>M320 Long Range Rifle is a .408 caliber sniper rifle developed in the United States. The M320 LRR is a bolt-action rifle valued for its accuracy up to 2000 meters.M320 Long Range Rifle is a .408 caliber sniper rifle developed in the United States. The M320 LRR is a bolt-action rifle valued for its accuracy up to 2000 meters.</description>
+    <graphicData>
+      <texPath>Things/Weapons/HIDGun_M320LRR_Blk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.885,1.885)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.32</equippedDistanceOffset>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>14.79</Mass>
+      <AccuracyTouch>0.46</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_50Cal</defaultProjectile>
+        <warmupTime>3.8</warmupTime>
+        <range>51.9</range>
+        <soundCast>HID_Shot_A3M320LRR</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+      <li>A3M320LRR</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>
