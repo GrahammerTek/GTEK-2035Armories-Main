@@ -45,6 +45,7 @@
             <clipPath>Shot/Shot_GTEKP07</clipPath>
           </li>
         </grains>
+        <volumeRange>45~45</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

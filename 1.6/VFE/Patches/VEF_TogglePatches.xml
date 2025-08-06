@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="VFECore.PatchOperationToggableSequence">
+  <Operation Class="VEF.PatchOperationToggableSequence">
     <enabled>False</enabled>
     <label>Use real-life equivalent weapon names:</label>
     <operations>
@@ -662,6 +662,25 @@
           </value>
         </match>
       </li>
+      <!--DSA SA58 OSW-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_SLRPara"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SLRPara"]/label</xpath>
+          <value>
+            <label>DSA SA58 OSW</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="HID_BaseSLRPara"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="HID_BaseSLRPara"]/description</xpath>
+          <value>
+            <description>The paratrooper version of the Belgian FAL battle rifle comes with a folding-stock, shorter barrel, and an aluminum-alloy lower receiver. It weighs less and is easier to handle than its bigger brother, but in return, loses some of its range and accuracy.</description>
+          </value>
+        </match>
+      </li>
       <!--Vektor R4-->
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour"]</xpath>
@@ -1032,19 +1051,11 @@
       </li>
     </operations>
   </Operation>
-  <Operation Class="VFECore.PatchOperationToggableSequence">
+  <Operation Class="VEF.PatchOperationToggableSequence">
     <enabled>True</enabled>
     <label>[CE] Remove duplicate weapons from Combat Extended submods:</label>
     <operations>
       <!--CE Guns-->
-      <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
-        <match Class="PatchOperationAttributeSet">
-          <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
-          <attribute>Abstract</attribute>
-          <value>True</value>
-        </match>
-      </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CE_Gun_AKM"]</xpath>
         <match Class="PatchOperationAttributeSet">
@@ -1076,6 +1087,24 @@
           <xpath>Defs/ThingDef[defName="CE_Gun_CarlGustaf"]</xpath>
           <attribute>Abstract</attribute>
           <value>True</value>
+        </match>
+      </li>
+      <!--CDLC Only-->
+      <li Class="PatchOperationFindMod">
+        <mods>
+          <li>2035 Armories - CDLC Weapons</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
+              <match Class="PatchOperationAttributeSet">
+                <xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
+                <attribute>Abstract</attribute>
+                <value>True</value>
+              </match>
+            </li>
+          </operations>
         </match>
       </li>
     </operations>

@@ -141,7 +141,7 @@
       <Mass>2.98</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>1.00</SightsEfficiency>
-      <ShotSpread>0.16</ShotSpread>
+      <ShotSpread>0.17</ShotSpread>
       <SwayFactor>0.90</SwayFactor>
       <Bulk>3.60</Bulk>
       <WorkToMake>29000</WorkToMake>
@@ -171,7 +171,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
-        <range>25</range>
+        <range>20</range>
         <soundCast>HID_Shot_A3ProtectorSMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
