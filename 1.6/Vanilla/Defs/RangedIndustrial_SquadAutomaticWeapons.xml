@@ -12,7 +12,6 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.12</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -73,6 +72,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--LIM-85-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -85,7 +89,6 @@
       <drawSize>(1.2,1.2)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.1</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -146,6 +149,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Mk200-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMk200SAW" Abstract="True">
@@ -155,7 +163,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
-    <equippedDistanceOffset>0.08</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -215,6 +222,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.08,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMk200SAW">
     <defName>UACGGun_Mk200_Snd</defName>
@@ -285,7 +297,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.12</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -345,6 +356,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXSW">
     <defName>UACGGun_MXSW_Snd</defName>
@@ -461,7 +477,6 @@
       <drawSize>(1.595,1.595)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.2</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -525,6 +540,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.2,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--SPAR-16S-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseSpar16S" Abstract="True">
@@ -534,7 +554,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.08</equippedDistanceOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -597,6 +616,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.08,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseSpar16S">
     <defName>UACGGun_SPAR16S_Blk</defName>
@@ -713,7 +737,6 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.16</equippedDistanceOffset>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -777,5 +800,10 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

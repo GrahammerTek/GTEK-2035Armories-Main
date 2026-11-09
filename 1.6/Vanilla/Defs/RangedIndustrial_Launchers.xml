@@ -60,6 +60,11 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>-0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
     <defName>UACGGun_MAAWSM4ModOne_Grn</defName>
@@ -182,5 +187,10 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

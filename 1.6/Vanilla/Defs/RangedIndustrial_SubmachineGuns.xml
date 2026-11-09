@@ -74,6 +74,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Protector-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -151,6 +156,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Sting-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -164,7 +174,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <soundInteract>Interact_SMG</soundInteract>
-    <equippedDistanceOffset>0.04</equippedDistanceOffset>
     <weaponClasses>
       <li>ShortShots</li>
       <li>RangedLight</li>
@@ -230,6 +239,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.04,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Vermin-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseVerminSMG" Abstract="True">
@@ -303,6 +317,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseVerminSMG">
     <defName>UACGGun_VerminSMG</defName>

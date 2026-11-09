@@ -13,7 +13,6 @@
       <drawSize>(1.62,1.62)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -74,6 +73,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Kozlice Short-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -88,7 +92,6 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.2</generateCommonality>
-    <equippedDistanceOffset>0.1</equippedDistanceOffset>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -145,5 +148,10 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

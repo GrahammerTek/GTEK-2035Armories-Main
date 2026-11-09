@@ -68,6 +68,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_Base4five">
     <defName>UACGGun_4five_Snd</defName>
@@ -201,6 +206,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--P07-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BasePseven" Abstract="True">
@@ -271,6 +281,9 @@
       </li>
     </tools>
     <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshTwo</def>
         <drawSize>(0.55,0.55)</drawSize>
@@ -454,6 +467,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Rook-40-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -527,6 +545,9 @@
       </li>
     </tools>
     <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshTwo</def>
         <drawSize>(0.55,0.55)</drawSize>
@@ -608,6 +629,9 @@
       </li>
     </tools>
     <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshTwo</def>
         <drawSize>(0.9,0.9)</drawSize>

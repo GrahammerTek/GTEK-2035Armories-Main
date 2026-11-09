@@ -9,7 +9,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>1</generateCommonality>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -75,6 +74,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseNavid">
     <defName>UACGGun_Navid_Tan</defName>
@@ -95,7 +99,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -161,6 +164,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseSPMG">
     <defName>UACGGun_SPMG_Snd</defName>

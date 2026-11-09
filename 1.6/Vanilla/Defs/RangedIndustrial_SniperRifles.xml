@@ -23,7 +23,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -85,6 +84,11 @@
     <weaponTags Inherit="False">
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseGM6Lynx">
     <defName>UACGGun_GM6Lynx_Blk</defName>
@@ -201,7 +205,6 @@
       <drawSize>(1.885,1.885)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.32</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -264,5 +267,10 @@
       <li>SniperRifle</li>
       <li>A3M320LRR</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.32,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

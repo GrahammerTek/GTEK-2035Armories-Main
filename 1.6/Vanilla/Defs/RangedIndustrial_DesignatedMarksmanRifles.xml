@@ -8,7 +8,6 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.16</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -75,6 +74,11 @@
     <weaponTags Inherit="False">
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseASP1Kir">
     <defName>UACGGun_ASP1Kir_Blk</defName>
@@ -150,7 +154,6 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.16</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -215,6 +218,11 @@
       <li>SniperRifle</li>
       <li>A3CMR76Blk</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Cyrus-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseCyrus" Abstract="True">
@@ -224,7 +232,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -289,6 +296,11 @@
       <li>IndustrialGunAdvanced</li>
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseCyrus">
     <defName>UACGGun_Cyrus_Blk</defName>
@@ -359,7 +371,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.12</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -427,6 +438,11 @@
       <li>IndustrialGunAdvanced</li>
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMKI_EMR">
     <defName>UACGGun_Mk1_EMR_Blk</defName>
@@ -540,7 +556,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -605,6 +620,11 @@
       <li>IndustrialGunAdvanced</li>
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMk14DMR">
     <defName>UACGGun_Mk14DMR_Camo</defName>
@@ -678,7 +698,6 @@
       <drawSize>(1.595,1.595)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.24</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -742,6 +761,11 @@
       <li>CivilDefenseRifle</li>
       <li>A3Mk14Classic</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.24,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--Mk18 ABR-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMk18ABR" Abstract="True">
@@ -811,6 +835,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMk18ABR">
     <defName>UACGGun_Mk18ABR</defName>
@@ -831,7 +860,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.2</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -896,6 +924,11 @@
     <weaponTags Inherit="False">
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.2,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMARIO">
     <defName>UACGGun_MARIO_Blk</defName>
@@ -1009,7 +1042,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.16</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1076,6 +1108,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXM">
     <defName>UACGGun_MXM_Snd</defName>
@@ -1189,7 +1226,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.12</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1253,6 +1289,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BasePrometMR">
     <defName>UACGGun_PrometMR_Olv</defName>
@@ -1365,7 +1406,6 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>0.08</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1432,6 +1472,11 @@
       <li>IndustrialGunAdvanced</li>
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.08,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_BaseRahim">
     <defName>UACGGun_Rahim</defName>
@@ -1452,7 +1497,6 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
-    <equippedDistanceOffset>0.16</equippedDistanceOffset>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1517,6 +1561,11 @@
       <li>IndustrialGunAdvanced</li>
       <li>SniperRifle</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="GTekFunctions.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HID_SPAR17DMR">
     <defName>UACGGun_SPAR17_Blk</defName>
