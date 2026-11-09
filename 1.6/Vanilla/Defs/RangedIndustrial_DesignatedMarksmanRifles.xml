@@ -88,15 +88,20 @@
       <li>A3ASP1KirBlk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Tan)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_ASP1Kir_Tan</texPath>
-            <weapon>UACGGun_ASP1Kir_Tan</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Tan</label>
+                <weapon>UACGGun_ASP1Kir_Tan</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -115,15 +120,20 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_ASP1Kir_Blk</texPath>
-            <weapon>UACGGun_ASP1Kir_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_ASP1Kir_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -291,15 +301,20 @@
       <li>A3CyrusBlk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Tan)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Cyrus_Tan</texPath>
-            <weapon>UACGGun_Cyrus_Tan</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Tan</label>
+                <weapon>UACGGun_Cyrus_Tan</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -317,15 +332,20 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Cyrus_Blk</texPath>
-            <weapon>UACGGun_Cyrus_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_Cyrus_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -419,15 +439,24 @@
       <li>A3Mk1EMRBlk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Khaki)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Mk1_EMR_Khk</texPath>
-            <weapon>UACGGun_Mk1_EMR_Khk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_Mk1_EMR_Khk</weapon>
+              </li>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_Mk1_EMR_Snd</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -445,15 +474,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Sand)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Mk1_EMR_Snd</texPath>
-            <weapon>UACGGun_Mk1_EMR_Snd</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_Mk1_EMR_Snd</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_Mk1_EMR_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -471,15 +509,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Mk1_EMR_Blk</texPath>
-            <weapon>UACGGun_Mk1_EMR_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_Mk1_EMR_Blk</weapon>
+              </li>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_Mk1_EMR_Khk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -570,15 +617,20 @@
       <li>A3Mk14Camo</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Olive)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Mk14_Olv</texPath>
-            <weapon>UACGGun_Mk14DMR_Olv</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Olive</label>
+                <weapon>UACGGun_Mk14DMR_Olv</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -596,15 +648,20 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (FIA)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_Mk14_Camo</texPath>
-            <weapon>UACGGun_Mk14DMR_Camo</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>FIA</label>
+                <weapon>UACGGun_Mk14DMR_Camo</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -851,15 +908,24 @@
       <li>A3MAR10Blk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Arid Dazzle)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MAR10_Camo</texPath>
-            <weapon>UACGGun_MARIO_Camo</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Arid Dazzle</label>
+                <weapon>UACGGun_MARIO_Camo</weapon>
+              </li>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_MARIO_Snd</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -877,15 +943,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Sand)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MAR10_Snd</texPath>
-            <weapon>UACGGun_MARIO_Snd</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_MARIO_Snd</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_MARIO_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -903,15 +978,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MAR10_Blk</texPath>
-            <weapon>UACGGun_MARIO_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_MARIO_Blk</weapon>
+              </li>
+              <li>
+                <label>Arid Dazzle</label>
+                <weapon>UACGGun_MARIO_Camo</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1004,15 +1088,24 @@
       <li>A3MXMSnd</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MXM_Blk</texPath>
-            <weapon>UACGGun_MXM_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_MXM_Blk</weapon>
+              </li>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_MXM_Khk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1030,15 +1123,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Khaki)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MXM_Khk</texPath>
-            <weapon>UACGGun_MXM_Khk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_MXM_Khk</weapon>
+              </li>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_MXM_Snd</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1056,15 +1158,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Sand)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_MXM_Snd</texPath>
-            <weapon>UACGGun_MXM_Snd</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_MXM_Snd</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_MXM_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1154,15 +1265,24 @@
       <li>A3PrometMROlv</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_PrometMR_Blk</texPath>
-            <weapon>UACGGun_PrometMR_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_PrometMR_Blk</weapon>
+              </li>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_PrometMR_Snd</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1180,15 +1300,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Sand)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_PrometMR_Snd</texPath>
-            <weapon>UACGGun_PrometMR_Snd</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_PrometMR_Snd</weapon>
+              </li>
+              <li>
+                <label>Olive</label>
+                <weapon>UACGGun_PrometMR_Olv</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1206,15 +1335,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Olive)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_PrometMR_Olv</texPath>
-            <weapon>UACGGun_PrometMR_Olv</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Olive</label>
+                <weapon>UACGGun_PrometMR_Olv</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_PrometMR_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1391,15 +1529,24 @@
       <li>A3SPAR17Blk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Khaki)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_SPAR17_Khk</texPath>
-            <weapon>UACGGun_SPAR17_Khk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_SPAR17_Khk</weapon>
+              </li>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_SPAR17_Snd</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1417,15 +1564,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Sand)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_SPAR17_Snd</texPath>
-            <weapon>UACGGun_SPAR17_Snd</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Sand</label>
+                <weapon>UACGGun_SPAR17_Snd</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_SPAR17_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -1443,15 +1599,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_SPAR17_Blk</texPath>
-            <weapon>UACGGun_SPAR17_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_SPAR17_Blk</weapon>
+              </li>
+              <li>
+                <label>Khaki</label>
+                <weapon>UACGGun_SPAR17_Khk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>

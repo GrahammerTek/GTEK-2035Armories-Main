@@ -97,15 +97,24 @@
       <li>A3GM6LynxBlk</li>
     </weaponTags>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Hex)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_GM6Lynx_Hex</texPath>
-            <weapon>UACGGun_GM6Lynx_Hex</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Hex</label>
+                <weapon>UACGGun_GM6Lynx_Hex</weapon>
+              </li>
+              <li>
+                <label>Green Hex</label>
+                <weapon>UACGGun_GM6Lynx_GrnHex</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -123,15 +132,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Green Hex)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_GM6Lynx_GrnHex</texPath>
-            <weapon>UACGGun_GM6Lynx_GrnHex</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Green Hex</label>
+                <weapon>UACGGun_GM6Lynx_GrnHex</weapon>
+              </li>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_GM6Lynx_Blk</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>
@@ -149,15 +167,24 @@
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
     <comps>
-      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+      <li Class="GTekFunctions.CompProperties_SwitchWeapon">
         <weaponsToSwitch>
           <li>
-            <label>Change Camo (Black)</label>
+            <label>Change Camo</label>
             <description>Click to change weapon color.</description>
-            <texPath>Things/Weapons/HIDGun_GM6Lynx_Blk</texPath>
-            <weapon>UACGGun_GM6Lynx_Blk</weapon>
+            <texPath>UI/Buttons/HID_ChangeCamo</texPath>
             <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
             <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+            <options>
+              <li>
+                <label>Black</label>
+                <weapon>UACGGun_GM6Lynx_Blk</weapon>
+              </li>
+              <li>
+                <label>Hex</label>
+                <weapon>UACGGun_GM6Lynx_Hex</weapon>
+              </li>
+            </options>
           </li>
         </weaponsToSwitch>
       </li>

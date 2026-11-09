@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatDef>
+    <defName>HID_BuyPriceFactor</defName>
+    <label>buy price multiplier</label>
+    <description>A multiplier on the price at which you can buy items.</description>
+    <category>BasicsNonPawn</category>
+    <showIfUndefined>false</showIfUndefined>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>2509</displayPriorityInCategory>
+    <showOnUntradeables>false</showOnUntradeables>
+  </StatDef>
+</Defs>
