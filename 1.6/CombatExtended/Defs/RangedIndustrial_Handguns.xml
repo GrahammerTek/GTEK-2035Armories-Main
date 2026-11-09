@@ -26,7 +26,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.76</SwayFactor>
+      <SwayFactor>1.01</SwayFactor>
       <Bulk>2.00</Bulk>
       <WorkToMake>8500</WorkToMake>
     </statBases>
@@ -112,6 +112,20 @@
     <weaponTags>
       <li>A34fiveSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Green)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_4five_Grn</texPath>
+            <weapon>UACGGun_4five_Grn</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_Base4five">
     <defName>UACGGun_4five_Grn</defName>
@@ -124,6 +138,20 @@
       <li>A34fiveGrn</li>
     </weaponTags>
     <recipeMaker IsNull="True" />
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_4five</texPath>
+            <weapon>UACGGun_4five_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--ACP-C2-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -148,7 +176,7 @@
       <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.77</SwayFactor>
+      <SwayFactor>1.03</SwayFactor>
       <Bulk>2.21</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -245,7 +273,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.7</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.61</SwayFactor>
+      <SwayFactor>0.81</SwayFactor>
       <Bulk>1.80</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -331,6 +359,20 @@
     <weaponTags>
       <li>A3PsevenSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07_Blk</texPath>
+            <weapon>UACGGun_Pseven_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BasePseven">
     <defName>UACGGun_Pseven_Blk</defName>
@@ -343,6 +385,20 @@
       <li>A3PsevenBlk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Khaki)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07_Khk</texPath>
+            <weapon>UACGGun_Pseven_Khk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BasePseven">
     <defName>UACGGun_Pseven_Khk</defName>
@@ -355,6 +411,20 @@
       <li>A3PsevenKhk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07</texPath>
+            <weapon>UACGGun_Pseven_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--PM-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -378,7 +448,7 @@
       <WorkToMake>6500</WorkToMake>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.63</SwayFactor>
+      <SwayFactor>0.84</SwayFactor>
       <Bulk>1.62</Bulk>
       <Mass>0.91</Mass>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
@@ -478,7 +548,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.7</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.73</SwayFactor>
+      <SwayFactor>0.98</SwayFactor>
       <Bulk>1.98</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -572,7 +642,7 @@
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
       <SightsEfficiency>0.8</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>0.93</SwayFactor>
+      <SwayFactor>1.23</SwayFactor>
       <Bulk>2.67</Bulk>
       <WorkToMake>5500</WorkToMake>
     </statBases>
@@ -611,7 +681,7 @@
         <warmupTime>0.5</warmupTime>
         <range>23</range>
         <soundCast>HID_Shot_A3Zubr</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_A3Zubr</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>

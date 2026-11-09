@@ -226,6 +226,20 @@
     <weaponTags>
       <li>A3Mk200Snd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_Mk200_Blk</texPath>
+            <weapon>UACGGun_Mk200_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMk200SAW">
     <defName>UACGGun_Mk200_Blk</defName>
@@ -238,6 +252,20 @@
       <li>A3Mk200Blk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_Mk200</texPath>
+            <weapon>UACGGun_Mk200_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--MX SW-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMXSW" Abstract="True">
@@ -318,6 +346,20 @@
     <weaponTags>
       <li>A3MXSWSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXSW_Blk</texPath>
+            <weapon>UACGGun_MXSW_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXSW">
     <defName>UACGGun_MXSW_Blk</defName>
@@ -330,6 +372,20 @@
       <li>A3MXSWBlk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Khaki)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXSW_Khk</texPath>
+            <weapon>UACGGun_MXSW_Khk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXSW">
     <defName>UACGGun_MXSW_Khk</defName>
@@ -342,6 +398,20 @@
       <li>A3MXSWKhk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXSW_Snd</texPath>
+            <weapon>UACGGun_MXSW_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--RPK-12-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -501,6 +571,20 @@
     <weaponTags>
       <li>A3SPAR16SBlk</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Khaki)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_SPAR16S_Khk</texPath>
+            <weapon>UACGGun_SPAR16S_Khk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseSpar16S">
     <defName>UACGGun_SPAR16S_Khk</defName>
@@ -513,6 +597,20 @@
       <li>A3SPAR16SKhk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_SPAR16S_Snd</texPath>
+            <weapon>UACGGun_SPAR16S_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseSpar16S">
     <defName>UACGGun_SPAR16S_Snd</defName>
@@ -525,6 +623,20 @@
       <li>A3SPAR16SSnd</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_SPAR16S_Blk</texPath>
+            <weapon>UACGGun_SPAR16S_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--Zafir-->
   <ThingDef ParentName="BaseHumanMakeableGun">

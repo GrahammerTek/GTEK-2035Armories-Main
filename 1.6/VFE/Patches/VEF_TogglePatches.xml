@@ -658,7 +658,7 @@
         <match Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="HID_BaseSLR"]/description</xpath>
           <value>
-            <description>The Belgian FAL battle rifle is one of the most widely used rifles in history. Chambered for 7.62mm ammunition and outfitted with a heavy barrel, this variant acts primarily as a squad automatic weapon.</description>
+            <description>The FN FAL battle rifle is one of the most widely used rifles in history. Chambered for 7.62mm ammunition and outfitted with a heavy barrel, this variant acts primarily as a squad automatic weapon.</description>
           </value>
         </match>
       </li>
@@ -677,7 +677,7 @@
         <match Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="HID_BaseSLRPara"]/description</xpath>
           <value>
-            <description>The paratrooper version of the Belgian FAL battle rifle comes with a folding-stock, shorter barrel, and an aluminum-alloy lower receiver. It weighs less and is easier to handle than its bigger brother, but in return, loses some of its range and accuracy.</description>
+            <description>The paratrooper version of the FN FAL battle rifle comes with a folding-stock, shorter barrel, and an aluminum-alloy lower receiver. It weighs less and is easier to handle than its bigger brother, but in return, loses some of its range and accuracy.</description>
           </value>
         </match>
       </li>
@@ -706,6 +706,43 @@
           <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper"]/description</xpath>
           <value>
             <description>The R4 is a South African licensed variant of the Israeli IMI Galil with several modifications applied. Besides being made of a high-strength polymer, differences include the lack of a carry handle and a number of improvements made to its internal operating mechanism.</description>
+          </value>
+        </match>
+      </li>
+      <!--ASh-12-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Veles_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_Veles_Blk"]/label</xpath>
+          <value>
+            <label>ASh-12</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelesS_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelesS_Blk"]/label</xpath>
+          <value>
+            <label>ASh-12 LR</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_VelesGL_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_VelesGL_Blk"]/label</xpath>
+          <value>
+            <label>ASh-12 GL</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="UACGGun_Veles_Blk" or defName="UACGGun_VelesS_Blk" or defName="UACGGun_VelesGL_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="UACGGun_Veles_Blk" or defName="UACGGun_VelesS_Blk" or defName="UACGGun_VelesGL_Blk"]/description</xpath>
+          <value>
+            <description>The Russian-developed ASh-12 is a dedicated CQB bullpup rifle with high stopping power on account of its specially designed 12.7x55mm ammunition. It was originally designed to take down dangerous criminals and terrorists with a single shot. Besides the base variant, the rifle also comes with an underbarrel grenade launcher, designated as the ASh-12 GL, and a longer-barreled model for increased range, designated as the ASh-12 LR.</description>
           </value>
         </match>
       </li>
@@ -860,6 +897,52 @@
           <description>The HK417A2 designated marksman rifle is in many ways similar to the HK416. The main difference is the chambering to 7.62mm which also means a longer, thicker barrel and more weight. Thanks to the more powerful ammunition, the HK417A2 is most suitable for ranges from 600 to 800 meters. The rifle offers a single and full auto mode and is, like the HK416, compatible with a large number of accessories.</description>
         </value>
       </li>
+      <!--HERA H6-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Blk"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Blk"]/label</xpath>
+          <value>
+            <label>HERA H6 (Black)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Olv"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Olv"]/label</xpath>
+          <value>
+            <label>HERA H6 (Olive)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Tan"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Tan"]/label</xpath>
+          <value>
+            <label>HERA H6 (Tan)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Gold"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_HADESH6_Gold"]/label</xpath>
+          <value>
+            <label>HERA H6 (Gold)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseHADES_HSix"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="HID_BaseHADES_HSix"]/description</xpath>
+          <value>
+            <description>Manufactured by HERA GmbH in Germany, the H6 is a modern and easy-to-handle repeating rifle chambered for 5.56mm rounds. Although traditionally used for sports shooting, the illegal arms trade has introduced the H6 into various conflict zones as a cheap and ultra-lightweight alternative to heavier marksman rifles. Of particular note is the side-loaded magazine, allowing for more options in terms of weapon resting and stability.</description>
+          </value>
+        </match>
+      </li>
       <!--=Sniper Rifles=-->
       <!--Cheytac M200 Intervention-->
       <li Class="PatchOperationReplace">
@@ -955,6 +1038,35 @@
           <description>The RM338 (formerly known as the LWMMG) is a lightweight medium machine gun, which greatly benefits from modern materials. It is designed to fill the gap between 7.62mm and .50 cal machine guns. The RM338 uses .338 Norma Magnum bullets. The effective range of the machine gun is 1500 meters, and thanks to advanced technology, it has low recoil.</description>
         </value>
       </li>
+      <!--Vektor SS-77-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SA77G"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SA77G"]/label</xpath>
+          <value>
+            <label>Vektor SS-77</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SA77G" or defName="UACGGun_SA77Compact"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SA77G" or defName="UACGGun_SA77Compact"]/description</xpath>
+          <value>
+            <description>The Vektor SS-77 is a South African general-purpose machine gun chambered in 7.62x51mm. It was designed in the late 1970s and has seen continuous combat action on the continent since. In the mid-1990s, a more compact variant was introduced to cut down on weight and improve handling.</description>
+          </value>
+        </match>
+      </li>
+      <!--Vektor SS-77 Compact-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_SA77Compact"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_SA77Compact"]/label</xpath>
+          <value>
+            <label>Vektor SS-77 Compact</label>
+          </value>
+        </match>
+      </li>
       <!--=Launchers=-->
       <!--M3A1 MAAWS-->
       <li Class="PatchOperationReplace">
@@ -974,6 +1086,34 @@
         <value>
           <description>The M3A1 MAAWS (Multi-role Anti-armor Anti-personnel Weapon System) is the latest member of the originally Swedish-made recoilless rifle family. The M3A1 is lighter, accurate, and more durable than its predecessors. It can fire multiple types of 84mm rounds, with a maximum effective range of 700 meters against static targets. The M3A1 has a laser rangefinder and integrated night-vision to accurately engage enemy targets at various ranges, at any hour of the day.</description>
         </value>
+      </li>
+      <!--GLX 3GL-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_GLX"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_GLX"]/label</xpath>
+          <value>
+            <label>GLX340</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="UACGGun_GLX_Snd"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="UACGGun_GLX_Snd"]/label</xpath>
+          <value>
+            <label>GLX340 (Sand)</label>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[@Name="HID_BaseGLX"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="HID_BaseGLX"]/description</xpath>
+          <value>
+            <description>The GLX340 is a South African licensed variant of the GLX160 modified to be able to fire 3GL grenades. It is lightweight, easily serviceable, and fires 40mm grenades with an effective range of 400 meters.</description>
+          </value>
+        </match>
       </li>
       <!--=Attachments=-->
       <li Class="PatchOperationFindMod">
@@ -1092,7 +1232,7 @@
       <!--CDLC Only-->
       <li Class="PatchOperationFindMod">
         <mods>
-          <li>2035 Armories - CDLC Weapons</li>
+          <li>2035 Armories - Arma 3 CDLC Weapons</li>
         </mods>
         <match Class="PatchOperationSequence">
           <operations>

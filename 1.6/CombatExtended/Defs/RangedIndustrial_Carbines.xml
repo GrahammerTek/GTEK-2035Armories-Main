@@ -37,7 +37,7 @@
         <warmupTime>0.8</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_A3AKM</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -125,6 +125,7 @@
     <graphicData>
       <texPath>Things/Weapons/HIDGun_AKS74U</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.16</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
@@ -152,7 +153,7 @@
         <warmupTime>0.9</warmupTime>
         <range>40</range>
         <soundCast>HID_Shot_A3AKS74U</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -459,6 +460,20 @@
     <weaponTags>
       <li>A3Mk20CCamo</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_Mk20C_Snd</texPath>
+            <weapon>UACGGun_Mk20C_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMk20C">
     <defName>UACGGun_Mk20C_Snd</defName>
@@ -471,6 +486,20 @@
       <li>A3Mk20CSand</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (AAF)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_Mk20C_Camo</texPath>
+            <weapon>UACGGun_Mk20C_Camo</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--MXC-->
   <ThingDef ParentName="BaseHumanMakeableGun" Name="HID_BaseMXC" Abstract="True">
@@ -500,7 +529,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_65x39mmCaseless_FMJ_SB</defaultProjectile>
-        <warmupTime>0.8</warmupTime>
+        <warmupTime>0.5</warmupTime>
         <range>40</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -594,6 +623,20 @@
     <weaponTags>
       <li>A3MXCSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXC_Blk</texPath>
+            <weapon>UACGGun_MXC_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXC">
     <defName>UACGGun_MXC_Blk</defName>
@@ -606,6 +649,20 @@
       <li>A3MXCBlk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Khaki)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXC_Khk</texPath>
+            <weapon>UACGGun_MXC_Khk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMXC">
     <defName>UACGGun_MXC_Khk</defName>
@@ -618,6 +675,20 @@
       <li>A3MXCKhk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MXC_Snd</texPath>
+            <weapon>UACGGun_MXC_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--TRG-20-->
   <ThingDef ParentName="BaseHumanMakeableGun">

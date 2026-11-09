@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Laser-->
+  <ThingDef ParentName="MoteBase">
+    <defName>HID_Mote_LaserPointer_Green</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/HID_LaserPointer</texPath>
+      <color>(106, 207, 77, 100)</color>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

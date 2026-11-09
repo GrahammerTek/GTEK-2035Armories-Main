@@ -96,6 +96,20 @@
     <weaponTags>
       <li>A3GM6LynxBlk</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Hex)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_GM6Lynx_Hex</texPath>
+            <weapon>UACGGun_GM6Lynx_Hex</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseGM6Lynx">
     <defName>UACGGun_GM6Lynx_Hex</defName>
@@ -108,6 +122,20 @@
       <li>A3GM6LynxHex</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Green Hex)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_GM6Lynx_GrnHex</texPath>
+            <weapon>UACGGun_GM6Lynx_GrnHex</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseGM6Lynx">
     <defName>UACGGun_GM6Lynx_GrnHex</defName>
@@ -120,6 +148,20 @@
       <li>A3GM6LynxGrnHex</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_GM6Lynx_Blk</texPath>
+            <weapon>UACGGun_GM6Lynx_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--M320 LRR-->
   <ThingDef ParentName="BaseHumanMakeableGun">

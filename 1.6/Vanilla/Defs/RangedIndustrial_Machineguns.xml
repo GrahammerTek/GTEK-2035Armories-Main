@@ -172,6 +172,20 @@
     <weaponTags>
       <li>A3SPMGSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_SPMG_Blk</texPath>
+            <weapon>UACGGun_SPMG_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseSPMG">
     <defName>UACGGun_SPMG_Blk</defName>
@@ -184,5 +198,19 @@
       <li>A3SPMGBlk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_SPMG_Snd</texPath>
+            <weapon>UACGGun_SPMG_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>

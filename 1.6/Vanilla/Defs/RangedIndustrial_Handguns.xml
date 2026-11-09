@@ -79,6 +79,20 @@
     <weaponTags>
       <li>A34fiveSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Green)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_4five_Grn</texPath>
+            <weapon>UACGGun_4five_Grn</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_Base4five">
     <defName>UACGGun_4five_Grn</defName>
@@ -91,6 +105,20 @@
       <li>A34fiveGrn</li>
     </weaponTags>
     <recipeMaker IsNull="True" />
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_4five</texPath>
+            <weapon>UACGGun_4five_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--ACP-C2-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -252,6 +280,20 @@
     <weaponTags>
       <li>A3PsevenSnd</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Black)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07_Blk</texPath>
+            <weapon>UACGGun_Pseven_Blk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BasePseven">
     <defName>UACGGun_Pseven_Blk</defName>
@@ -264,6 +306,20 @@
       <li>A3PsevenBlk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Khaki)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07_Khk</texPath>
+            <weapon>UACGGun_Pseven_Khk</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BasePseven">
     <defName>UACGGun_Pseven_Khk</defName>
@@ -276,6 +332,20 @@
       <li>A3PsevenKhk</li>
     </weaponTags>
     <recipeMaker IsNull="True"></recipeMaker>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_P07</texPath>
+            <weapon>UACGGun_Pseven_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--PM-->
   <ThingDef ParentName="BaseHumanMakeableGun">

@@ -99,6 +99,20 @@
     </projectile>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_127x55mm</defName>
+    <label>heavy rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>21</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
     <defName>HIDBullet_84x246mmR_HEAT</defName>
     <label>HEAT shell</label>
     <graphicData>

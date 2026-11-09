@@ -71,6 +71,20 @@
     <weaponTags>
       <li>A3MAAWSM4Mod1Grn</li>
     </weaponTags>
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Sand)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MAAWSMod1_Snd</texPath>
+            <weapon>UACGGun_MAAWSM4ModOne_Snd</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <ThingDef ParentName="HID_BaseMAAWSM4ModOne">
     <defName>UACGGun_MAAWSM4ModOne_Snd</defName>
@@ -83,6 +97,20 @@
       <li>A3MAAWSM4Mod1Grn</li>
     </weaponTags>
     <recipeMaker IsNull="True" />
+    <comps>
+      <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+        <weaponsToSwitch>
+          <li>
+            <label>Change Camo (Green)</label>
+            <description>Click to change weapon color.</description>
+            <texPath>Things/Weapons/HIDGun_MAAWSMod1_Grn</texPath>
+            <weapon>UACGGun_MAAWSM4ModOne_Grn</weapon>
+            <retainAmmoOnTransfer>true</retainAmmoOnTransfer>
+            <ticksToSwitchWeapon>0</ticksToSwitchWeapon>
+          </li>
+        </weaponsToSwitch>
+      </li>
+    </comps>
   </ThingDef>
   <!--RPG-7-->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -92,7 +120,7 @@
     <graphicData>
       <texPath>Things/Weapons/HIDGun_RPG7</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.45</drawSize>
+      <drawSize>1.885</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>

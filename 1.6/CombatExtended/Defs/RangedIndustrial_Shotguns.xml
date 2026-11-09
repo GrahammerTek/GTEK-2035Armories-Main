@@ -19,7 +19,7 @@
       <ShotSpread>0.11</ShotSpread>
       <SwayFactor>1.48</SwayFactor>
       <Bulk>11.62</Bulk>
-      <SightsEfficiency>1</SightsEfficiency>
+      <SightsEfficiency>1.00</SightsEfficiency>
       <WorkToMake>15000</WorkToMake>
     </statBases>
     <costList>
@@ -36,7 +36,7 @@
         <warmupTime>0.6</warmupTime>
         <range>20</range>
         <soundCast>HID_Shot_A3Kozlice</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_12Gauge</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -136,7 +136,7 @@
       <Mass>2.45</Mass>
       <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
       <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>0.83</SwayFactor>
+      <SwayFactor>1.18</SwayFactor>
       <Bulk>5.81</Bulk>
       <SightsEfficiency>0.5</SightsEfficiency>
       <WorkToMake>11500</WorkToMake>
@@ -155,7 +155,7 @@
         <warmupTime>0.6</warmupTime>
         <range>14</range>
         <soundCast>HID_Shot_A3KozliceSawedOff</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_12Gauge</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
